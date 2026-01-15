@@ -1,0 +1,483 @@
+# Project .gitignore Template
+# Copy to project root and customize for your stack
+# Version: 1.1 (Enhanced with multi-language support)
+
+# =============================================================================
+# IMPORTANT: This is PROJECT-SPECIFIC
+# =============================================================================
+# For global ignores (OS files, editor configs, credentials):
+#   Use ~/.gitignore_global
+#   Setup: git config --global core.excludesfile ~/.gitignore_global
+#
+# This file should only contain:
+#   - Build artifacts
+#   - Dependencies
+#   - Test output
+#   - Project-specific runtime data
+# =============================================================================
+
+# =============================================================================
+# DEPENDENCIES - Never commit, install from manifests
+# =============================================================================
+
+# JavaScript / Node.js / TypeScript
+node_modules/
+.npm/
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.pnp.*
+jspm_packages/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+.venv/
+env/
+.env/
+ENV/
+pythonenv*/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.nox/
+
+# Ruby
+.bundle/
+vendor/bundle/
+.ruby-version
+.ruby-gemset
+
+# Go
+vendor/
+
+# Rust
+target/
+**/*.rs.bk
+*.pdb
+
+# Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+.gradle/
+build/
+.gradletasknamecache
+
+# PHP
+vendor/
+composer.phar
+composer.lock
+
+# Lua
+luarocks/
+
+# Perl
+local/
+blib/
+_build/
+Build
+*.bak
+Makefile.old
+MYMETA.*
+
+# =============================================================================
+# LOCK FILES - DECISION POINT
+# =============================================================================
+# Lock files ensure reproducible builds (same dependencies everywhere)
+#
+# RECOMMENDATION: Commit lock files for:
+#   - Applications (web apps, CLIs, services)
+#   - Team projects (everyone gets same versions)
+#   - Personal multi-machine projects (consistency)
+#
+# IGNORE lock files for:
+#   - Libraries (let consumers choose versions)
+#   - Experimental/prototype projects
+#   - Solo projects where you want flexibility
+#
+# Uncomment the lock file(s) for your stack:
+
+# JavaScript / TypeScript / Bun
+!bun.lockb              # Bun (fast, modern)
+# !package-lock.json    # npm
+# !yarn.lock            # Yarn
+# !pnpm-lock.yaml       # pnpm
+
+# Python
+# !Pipfile.lock         # Pipenv
+# !poetry.lock          # Poetry
+# !pdm.lock             # PDM
+# requirements.txt is NOT a lock file, always commit
+
+# Ruby
+# !Gemfile.lock         # Bundler
+
+# Rust
+# !Cargo.lock           # Commit for binaries, ignore for libraries
+
+# Go
+# !go.sum               # Go modules (usually committed)
+
+# PHP
+# !composer.lock        # Composer
+
+# =============================================================================
+# BUILD OUTPUT - Generated from source, can be rebuilt
+# =============================================================================
+
+# General build directories
+dist/
+build/
+out/
+.output/
+_build/
+*.build/
+
+# JavaScript / TypeScript
+.next/
+.nuxt/
+.vuepress/dist/
+.docusaurus/
+.serverless/
+.fusebox/
+.dynamodb/
+
+# Python
+dist/
+build/
+*.egg-info/
+.Python
+
+# C / C++
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+*.slo
+*.lo
+*.a
+*.la
+*.lai
+*.lib
+
+# Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+# Rust
+target/
+Cargo.lock    # Ignore for libraries, commit for binaries
+
+# Go
+*.exe
+*.exe~
+*.test
+*.out
+go.work
+
+# Ruby
+*.gem
+*.rbc
+/.config
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+
+# PHP
+/vendor/
+/public/storage
+/public/hot
+
+# Lua
+luac.out
+*.src.rock
+*.tar.gz
+
+# Shell
+*.sh~
+
+# =============================================================================
+# TESTING AND COVERAGE
+# =============================================================================
+
+# General
+coverage/
+*.lcov
+htmlcov/
+.coverage
+.coverage.*
+
+# JavaScript / TypeScript
+.nyc_output/
+coverage/
+*.lcov
+
+# Python
+.pytest_cache/
+.hypothesis/
+.coverage
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+.tox/
+.nox/
+
+# Go
+*.test
+*.prof
+
+# Java
+target/surefire-reports/
+target/failsafe-reports/
+
+# Ruby
+/coverage/
+/spec/reports/
+
+# Rust
+*.profraw
+*.profdata
+
+# =============================================================================
+# TOOLING CACHES - Rebuild automatically
+# =============================================================================
+
+# General caches
+.cache/
+.temp/
+tmp/
+temp/
+
+# JavaScript / TypeScript
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+.parcel-cache/
+.turbo/
+.swc/
+
+# Python
+.mypy_cache/
+.dmypy.json
+.pytype/
+.pyre/
+
+# Rust
+.rust-analyzer/
+
+# Go
+*.test
+*.out
+
+# Java
+.classpath
+.project
+.settings/
+.factorypath
+
+# Ruby
+.sass-cache/
+
+# =============================================================================
+# LANGUAGE SERVERS AND TOOLING
+# =============================================================================
+
+# TypeScript
+tsconfig.tsbuildinfo
+
+# Python
+pyrightconfig.json
+
+# Rust
+rust-analyzer.json
+
+# C/C++
+compile_commands.json
+.ccls-cache/
+.clangd/
+
+# Java
+.metals/
+.bloop/
+
+# =============================================================================
+# RUNTIME DATA - Session-specific, never commit
+# =============================================================================
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# PID files
+*.pid
+*.seed
+*.pid.lock
+
+# Session data
+.sessions/
+sessions/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.*.swp
+.*.swo
+
+# =============================================================================
+# FRAMEWORK-SPECIFIC
+# =============================================================================
+
+# Django (Python)
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Flask (Python)
+instance/
+.webassets-cache
+
+# Rails (Ruby)
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+/storage/*
+!/storage/.keep
+
+# Laravel (PHP)
+/bootstrap/cache/*
+/public/hot
+/public/storage
+/storage/*.key
+.env.backup
+
+# Next.js (JavaScript/TypeScript)
+.next/
+out/
+next-env.d.ts
+
+# Nuxt.js (JavaScript/TypeScript)
+.nuxt/
+dist/
+
+# Hugo (Go)
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Jekyll (Ruby)
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# =============================================================================
+# SYNCTHING - If using for multi-machine sync
+# =============================================================================
+# Note: These patterns also in ~/.gitignore_global is fine (defensive)
+
+*.sync-conflict-*
+.syncthing.*
+.stfolder/
+.stversions/
+
+# =============================================================================
+# PROJECT SPECIFIC - Customize for your project
+# =============================================================================
+
+# Add project-specific patterns below
+# Examples:
+
+# Data directories (if they contain generated/downloaded data)
+# /data/
+# /datasets/
+# /uploads/
+
+# Secrets and credentials (if not in global gitignore)
+# .env.local
+# .env.*.local
+# config.local.*
+
+# Documentation builds
+# /docs/_build/
+# /site/
+
+# Large media assets (commit to LFS instead)
+# *.psd
+# *.ai
+# /assets/raw/
+
+# =============================================================================
+# WHAT YOU SHOULD COMMIT (for reference)
+# =============================================================================
+# These are NOT ignored - documenting for clarity:
+#
+# Source code:
+#   - All .py, .rs, .go, .js, .ts, .c, .cpp, .java, .rb, .lua, .pl, .sh, .php files
+#   - Configuration files (without secrets)
+#   - Makefiles, build scripts
+#   - Tests
+#
+# Dependency manifests:
+#   - package.json, Cargo.toml, go.mod, requirements.txt, Gemfile, composer.json
+#   - Lock files (if uncommented above)
+#
+# Documentation:
+#   - README.md, docs/, *.md
+#   - LICENSE
+#   - CHANGELOG.md
+#
+# Configuration (without secrets):
+#   - .gitignore, .gitattributes
+#   - .editorconfig
+#   - CI/CD configs (.github/, .gitlab-ci.yml)
+#   - Docker files (Dockerfile, docker-compose.yml)
+#
+# Static assets (reasonable size):
+#   - Images, fonts, icons (for web projects)
+#   - CSS, SCSS
+#   - HTML templates
+#
+# =============================================================================
+
+# End of template - customize above for your specific project

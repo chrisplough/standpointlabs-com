@@ -1,5 +1,4 @@
-baseURL = "/"
-relativeURLs = true
+baseURL = "https://standpointlabs.com/"
 languageCode = "en-us"
 title = "StandpointLabs"
 theme = "congo"

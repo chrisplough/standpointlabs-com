@@ -1,6 +1,6 @@
 ---
 title: "Why Can't You Just Prompt Better?"
-date: 2026-01-12T09:00:00-07:00
+date: 2026-01-06T09:00:00-07:00
 description: "Addressing the most common pushback we hear."
 draft: false
 ---

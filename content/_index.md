@@ -166,11 +166,11 @@ Your personal team of 8-15+ agents working in harmony, not chaos. Know they're c
 
 20+ years building enterprise technology. Employee #13 at G-Log, designed the architecture for what became Oracle Transportation Management. Co-founded MavenWire, grew it from zero to $14M/year revenue, 150+ employees, global offices, entirely bootstrapped. Sold 2016. Not the outcome I'd hoped for, but I learned what matters: protecting people, aligning incentives, and acting decisively when it counts.
 
-I built this because I needed it for my own work. Couldn't find it anywhere. Spent months looking. So I'm creating it. [Why this matters to me](https://chrisplough.com/my-why).
+I built this because I needed it for my own work. Couldn't find it anywhere. Spent months looking. So I'm creating it. <a href="https://chrisplough.com/my-why" target="_blank" rel="noopener">Why this matters to me</a>.
 
 ### In Partnership with Oznog
 
-Standpoint Labs collaborates with [Oznog](https://oznog.com) on building sovereign infrastructure for the fifth story: genuine human-AI interdependence. Different entities, shared values.
+Standpoint Labs collaborates with <a href="https://oznog.com" target="_blank" rel="noopener">Oznog</a> on building sovereign infrastructure for the fifth story: genuine human-AI interdependence. Different entities, shared values.
 
 ### Seeking
 

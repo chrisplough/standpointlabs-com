@@ -1,6 +1,6 @@
 ---
 title: "Perspective Modeling Breakthrough"
-date: 2025-05-01T14:00:00-07:00
+date: 2025-10-28T14:00:00-07:00
 description: "The core insight that shaped Standpoint Core's architecture."
 draft: false
 ---

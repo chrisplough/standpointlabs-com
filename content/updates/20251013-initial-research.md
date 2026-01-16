@@ -1,6 +1,6 @@
 ---
 title: "Initial Research Phase"
-date: 2025-03-15T10:00:00-07:00
+date: 2025-10-13T10:00:00-07:00
 description: "Beginning the deep dive into perspective-aware systems."
 draft: false
 ---

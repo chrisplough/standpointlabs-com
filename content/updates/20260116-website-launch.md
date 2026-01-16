@@ -1,6 +1,6 @@
 ---
 title: "Website Launch"
-date: 2026-01-15T08:00:00-07:00
+date: 2026-01-16T08:00:00-07:00
 description: "standpointlabs.com is live."
 draft: false
 ---

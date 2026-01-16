@@ -1,6 +1,6 @@
 ---
 title: "Looking for Design Partners"
-date: 2026-01-08T14:00:00-07:00
+date: 2025-12-20T14:00:00-07:00
 description: "The kind of organizations we want to build with."
 draft: false
 ---

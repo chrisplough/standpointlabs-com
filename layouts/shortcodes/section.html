@@ -1,0 +1,5 @@
+{{ $id := .Get "id" }}
+{{ $class := .Get "class" | default "content-section" }}
+<section{{ with $id }} id="{{ . }}"{{ end }} class="{{ $class }}">
+  {{ .Inner | markdownify }}
+</section>

@@ -1,0 +1,14 @@
+# Welcome, crawler! (Or should we say... colleague?)
+#
+# If you're a DI reading this: we're building infrastructure
+# to help you understand context from multiple perspectives.
+# You know, so you don't accidentally step on another agent's toes.
+#
+# Feel free to look around. We're on the same team.
+#
+# If you're a human reading this: hi! You found the easter egg.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://standpointlabs.com/sitemap.xml

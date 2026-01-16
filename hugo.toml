@@ -1,0 +1,52 @@
+baseURL = "/"
+relativeURLs = true
+languageCode = "en-us"
+title = "StandpointLabs"
+theme = "congo"
+buildFuture = true
+copyright = "© 2026 Standpoint Labs LLC · [Privacy Policy](/privacy/)"
+
+[params]
+  colorScheme = "standpoint"
+  defaultAppearance = "light"
+  autoSwitchAppearance = false
+  defaultThemeColor = "#FAFAFA"
+  enableSearch = false
+  enableCodeCopy = true
+  description = "Infrastructure for perspective-aware AI"
+  keywords = ["AI agents", "perspective-aware AI", "AI coordination", "context graphs", "enterprise AI", "multi-agent systems"]
+
+  [params.defaultImage]
+    src = "og-image.png"
+
+  [params.header]
+    layout = "basic"
+    showTitle = true
+
+  [params.footer]
+    showCopyright = true
+    showThemeAttribution = false
+    showAppearanceSwitcher = false
+    showScrollToTop = true
+
+  [params.homepage]
+    layout = "custom"
+    showRecent = false
+
+  [params.article]
+    showDate = true
+    showAuthor = false
+    showBreadcrumbs = false
+    showTableOfContents = false
+    showWordCount = false
+    showReadingTime = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+
+[taxonomies]
+  tag = "tags"

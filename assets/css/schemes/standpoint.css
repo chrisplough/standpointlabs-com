@@ -1,0 +1,43 @@
+/* Standpoint Labs Color Scheme */
+/* Light, warm, professional */
+
+:root {
+  /* Neutral scale - warm light to dark */
+  /* Base: warm off-white/cream */
+  --color-neutral: 30, 10%, 97%;
+  --color-neutral-50: 30, 10%, 98%;
+  --color-neutral-100: 30, 10%, 95%;
+  --color-neutral-200: 30, 10%, 90%;
+  --color-neutral-300: 30, 10%, 80%;
+  --color-neutral-400: 30, 10%, 60%;
+  --color-neutral-500: 30, 10%, 40%;
+  --color-neutral-600: 30, 10%, 30%;
+  --color-neutral-700: 30, 10%, 20%;
+  --color-neutral-800: 30, 10%, 12%;
+  --color-neutral-900: 30, 10%, 8%;
+
+  /* Primary/Accent - Deep blue-green (#2D5A5A) */
+  /* Hex #2D5A5A = HSL 180, 33%, 27% */
+  --color-primary-50: 180, 33%, 95%;
+  --color-primary-100: 180, 33%, 90%;
+  --color-primary-200: 180, 33%, 80%;
+  --color-primary-300: 180, 33%, 65%;
+  --color-primary-400: 180, 33%, 45%;
+  --color-primary-500: 180, 33%, 27%;
+  --color-primary-600: 180, 33%, 35%;
+  --color-primary-700: 180, 33%, 22%;
+  --color-primary-800: 180, 33%, 17%;
+  --color-primary-900: 180, 33%, 12%;
+
+  /* Secondary - matches neutral for now */
+  --color-secondary-50: 30, 10%, 98%;
+  --color-secondary-100: 30, 10%, 95%;
+  --color-secondary-200: 30, 10%, 90%;
+  --color-secondary-300: 30, 10%, 80%;
+  --color-secondary-400: 30, 10%, 60%;
+  --color-secondary-500: 30, 10%, 40%;
+  --color-secondary-600: 30, 10%, 30%;
+  --color-secondary-700: 30, 10%, 20%;
+  --color-secondary-800: 30, 10%, 12%;
+  --color-secondary-900: 30, 10%, 8%;
+}

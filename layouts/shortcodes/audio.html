@@ -1,0 +1,30 @@
+<div class="article-audio">
+  <p class="audio-label">Listen to this update:</p>
+  <audio controls preload="metadata" id="article-audio-{{ .Get "file" | urlize }}">
+    <source src="/audio/{{ .Get "file" }}" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div class="speed-controls">
+    <span class="speed-label">Speed:</span>
+    <button class="speed-btn" data-speed="0.75">0.75x</button>
+    <button class="speed-btn active" data-speed="1">1x</button>
+    <button class="speed-btn" data-speed="1.25">1.25x</button>
+    <button class="speed-btn" data-speed="1.5">1.5x</button>
+    <button class="speed-btn" data-speed="2">2x</button>
+    <a href="/audio/{{ .Get "file" }}" download class="audio-download">Download</a>
+  </div>
+  <script>
+    (function() {
+      const container = document.currentScript.closest('.article-audio');
+      const audio = container.querySelector('audio');
+      const buttons = container.querySelectorAll('.speed-btn');
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          audio.playbackRate = parseFloat(btn.dataset.speed);
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        });
+      });
+    })();
+  </script>
+</div>

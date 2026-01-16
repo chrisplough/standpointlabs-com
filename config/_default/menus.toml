@@ -1,0 +1,51 @@
+# Main navigation
+[[main]]
+  name = "Problem"
+  url = "/#the-problem"
+  weight = 10
+
+[[main]]
+  name = "Solution"
+  url = "/#solution"
+  weight = 20
+
+[[main]]
+  name = "Use Cases"
+  url = "/#use-cases"
+  weight = 30
+
+[[main]]
+  name = "About"
+  url = "/#about"
+  weight = 40
+
+[[main]]
+  name = "Updates"
+  url = "/updates/"
+  weight = 45
+
+[[main]]
+  name = "Connect"
+  url = "/contact/"
+  weight = 50
+
+# Footer navigation
+[[footer]]
+  name = "Problem"
+  url = "/#the-problem"
+  weight = 10
+
+[[footer]]
+  name = "Solution"
+  url = "/#solution"
+  weight = 20
+
+[[footer]]
+  name = "Updates"
+  url = "/updates/"
+  weight = 25
+
+[[footer]]
+  name = "Connect"
+  url = "/contact/"
+  weight = 30

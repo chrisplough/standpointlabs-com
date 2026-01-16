@@ -1,0 +1,1687 @@
+/* Standpoint Labs Custom Styles */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* ============================================
+   CSS Variables
+   ============================================ */
+:root {
+  --standpoint-bg-primary: #FAFAF8;
+  --standpoint-bg-secondary: #F5F5F3;
+  --standpoint-bg-tertiary: #EEEEEC;
+  --standpoint-text-primary: #1A1A1A;
+  --standpoint-text-secondary: #4A4A4A;
+  --standpoint-text-muted: #6A6A6A;
+  --standpoint-accent: #2D5A5A;
+  --standpoint-accent-hover: #5F8F8F;
+  --standpoint-border: #E0E0DE;
+}
+
+/* ============================================
+   Global Typography
+   ============================================ */
+* {
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--standpoint-bg-primary) !important;
+  color: var(--standpoint-text-secondary) !important;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Fix Congo's viewport height issues */
+html, body {
+  height: auto !important;
+  min-height: auto !important;
+}
+
+.grow,
+div.grow,
+main.grow,
+[class*="grow"] {
+  flex-grow: 0 !important;
+  flex: 0 0 auto !important;
+}
+
+body.h-screen,
+.h-screen {
+  height: auto !important;
+  min-height: auto !important;
+}
+
+/* ============================================
+   Hide auto-generated page title on specific pages
+   ============================================ */
+/* Homepage - has custom hero */
+main > article:has(.hero-section) > header:first-child {
+  display: none !important;
+}
+
+/* Contact page - show header with consistent spacing like other pages */
+main > article:has(.contact-section) > header {
+  display: block !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+/* Hide post navigation on pages that shouldn't have it */
+main > article:has(.contact-section) + nav,
+main > article:has(.hero-section) + nav {
+  display: none !important;
+}
+
+/* Hide the inner article footer on contact page (creates unwanted box) */
+main > article:has(.contact-section) > footer,
+main > article:has(.contact-section) footer.pt-8 {
+  display: none !important;
+}
+
+/* Remove borders/outlines on contact page elements */
+main > article:has(.contact-section) > section.prose,
+main > article:has(.contact-section) section {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Remove all visual styling from the prose section wrapper on contact page */
+/* But keep consistent spacing: margin-top 0, padding-top for 36px total gap from HR */
+/* Also remove max-width and centering so form aligns with header on wide screens */
+main > article:has(.contact-section) > section.prose.mt-6,
+section.prose.mt-6.max-w-full {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Also target any inner div that might have the border */
+main > article:has(.contact-section) > section.prose.mt-6 > div,
+main > article:has(.contact-section) > section > div {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Hide horizontal rules from markdown */
+main hr,
+article hr,
+.prose hr {
+  display: none !important;
+}
+
+/* ============================================
+   Typography Scale
+   ============================================ */
+h1 {
+  font-size: clamp(2.5rem, 6vw, 3.5rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
+  color: var(--standpoint-text-primary) !important;
+  letter-spacing: -0.02em !important;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  color: var(--standpoint-text-primary) !important;
+  margin-top: 0 !important;
+}
+
+h3 {
+  font-size: 1.375rem !important;
+  font-weight: 600 !important;
+  color: var(--standpoint-text-primary) !important;
+}
+
+h4 {
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  color: var(--standpoint-text-primary) !important;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--standpoint-text-secondary);
+}
+
+/* ============================================
+   Header / Navigation
+   ============================================ */
+header {
+  background-color: var(--standpoint-bg-primary) !important;
+  border-bottom: 1px solid var(--standpoint-border) !important;
+}
+
+/* Wordmark styling - two-tone effect */
+header .text-xl,
+header a[href="/"],
+header a[href="./"],
+header a.wordmark {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 1.4rem !important;
+  letter-spacing: -0.015em !important;
+  color: var(--standpoint-text-primary) !important;
+  text-decoration: none !important;
+  margin-right: 2.5rem !important; /* breathing room from nav */
+  white-space: nowrap !important; /* prevent wordmark from wrapping */
+  flex-shrink: 0 !important; /* don't let it shrink */
+}
+
+/* Two-tone wordmark: "Standpoint" bold, "Labs" lighter */
+.wordmark-standpoint {
+  font-weight: 600 !important;
+}
+
+.wordmark-labs {
+  font-weight: 400 !important;
+}
+
+/* Medium screens - slightly smaller wordmark */
+@media (min-width: 640px) and (max-width: 1023px) {
+  header .text-xl,
+  header a[href="/"],
+  header a[href="./"],
+  header a.wordmark {
+    font-size: 1.25rem !important;
+    margin-right: 1.5rem !important;
+  }
+}
+
+/* Mobile - wordmark stays prominent */
+@media (max-width: 639px) {
+  header .text-xl,
+  header a[href="/"],
+  header a[href="./"],
+  header a.wordmark {
+    font-size: 1.3rem !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* Nav links */
+nav a {
+  color: var(--standpoint-text-secondary) !important;
+  font-weight: 500 !important;
+  font-size: 0.95rem !important;
+  transition: color 0.2s ease !important;
+  white-space: nowrap !important; /* prevent nav items from wrapping */
+}
+
+nav a:hover {
+  color: var(--standpoint-accent) !important;
+}
+
+/* Medium screens - tighter nav to fit everything on one line */
+@media (min-width: 640px) and (max-width: 1023px) {
+  nav a {
+    font-size: 0.85rem !important;
+  }
+
+  /* Reduce gap between nav items */
+  nav ul {
+    gap: 0.75rem !important;
+  }
+
+  nav li {
+    margin: 0 !important;
+  }
+}
+
+/* Remove list styling from nav/header/footer */
+nav li::before,
+header li::before,
+footer li::before {
+  content: none !important;
+  display: none !important;
+}
+
+nav ul,
+header ul,
+footer ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
+}
+
+nav li,
+header li,
+footer li {
+  padding-left: 0 !important;
+}
+
+/* ============================================
+   Main Content Area
+   ============================================ */
+main {
+  background-color: var(--standpoint-bg-primary) !important;
+}
+
+/* Content sections */
+section {
+  padding: 4rem 0;
+}
+
+section:first-child {
+  padding-top: 3rem;
+}
+
+section:last-of-type {
+  padding-bottom: 1.5rem;
+}
+
+/* Alternating section backgrounds - full-bleed using pseudo-element */
+section.alt-bg,
+.content-section.alt-bg {
+  position: relative;
+  z-index: 0;
+}
+
+section.alt-bg::before,
+.content-section.alt-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /* Calculate offset to reach viewport edges */
+  /* Section is centered, so we need to go left by (viewport - section) / 2 */
+  left: calc(-50vw + 50%);
+  width: 100vw;
+  background-color: var(--standpoint-bg-secondary);
+  z-index: -1;
+}
+
+/* ============================================
+   Prose / Content Styling
+   ============================================ */
+.prose,
+[class*="prose"] {
+  --tw-prose-body: var(--standpoint-text-secondary) !important;
+  --tw-prose-headings: var(--standpoint-text-primary) !important;
+  --tw-prose-links: var(--standpoint-accent) !important;
+  --tw-prose-bold: var(--standpoint-text-primary) !important;
+  color: var(--standpoint-text-secondary) !important;
+  max-width: none !important;
+}
+
+.prose a,
+article a {
+  color: var(--standpoint-accent) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px !important;
+}
+
+.prose a:hover,
+article a:hover {
+  color: var(--standpoint-accent-hover) !important;
+}
+
+/* External link indicators - shows small arrow icon for outbound links */
+/* Target links that start with http but are not to standpointlabs.com or localhost */
+.prose a[href^="http"]:not([href*="standpointlabs.com"]):not([href*="localhost"])::after,
+article a[href^="http"]:not([href*="standpointlabs.com"]):not([href*="localhost"])::after,
+.content-section a[href^="http"]:not([href*="standpointlabs.com"]):not([href*="localhost"])::after {
+  content: "↗";
+  display: inline-block;
+  margin-left: 0.2em;
+  font-size: 0.8em;
+  opacity: 0.7;
+  text-decoration: none;
+  vertical-align: super;
+}
+
+/* Don't show indicator on buttons or nav links */
+nav a[href^="http"]::after,
+.btn-primary[href^="http"]::after,
+.btn-secondary[href^="http"]::after,
+.cta-group a[href^="http"]::after,
+footer a[href^="http"]::after {
+  content: none !important;
+}
+
+/* ============================================
+   Lists - Fix double bullets
+   ============================================ */
+/* Remove default list styles first */
+main ul,
+article ul,
+section ul,
+.prose ul,
+.content-section ul,
+.product-card ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Apply custom bullets only to content lists */
+main ul li,
+article ul li,
+section ul li,
+.prose ul li,
+.content-section ul li,
+.product-card ul li {
+  position: relative !important;
+  padding-left: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
+  list-style: none !important;
+}
+
+main ul li::before,
+article ul li::before,
+section ul li::before,
+.prose ul li::before,
+.content-section ul li::before,
+.product-card ul li::before {
+  content: "•" !important;
+  position: absolute !important;
+  left: 0 !important;
+  color: var(--standpoint-accent) !important;
+  font-weight: bold !important;
+}
+
+/* But NOT for nav/header/footer - remove bullets there */
+nav ul li::before,
+header ul li::before,
+footer ul li::before,
+footer nav ul li::before {
+  content: none !important;
+  display: none !important;
+}
+
+nav ul li,
+header ul li,
+footer ul li {
+  padding-left: 0 !important;
+}
+
+/* ============================================
+   Blockquotes
+   ============================================ */
+blockquote {
+  border-left: 3px solid var(--standpoint-accent) !important;
+  padding-left: 1.5rem !important;
+  margin: 1.5rem 0 !important;
+  font-style: normal !important;
+  color: var(--standpoint-text-secondary) !important;
+  background: transparent !important;
+}
+
+blockquote p {
+  font-size: 1.125rem !important;
+  line-height: 1.7 !important;
+}
+
+/* ============================================
+   Buttons / CTAs
+   ============================================ */
+.btn-primary,
+a.btn-primary {
+  background-color: var(--standpoint-accent) !important;
+  color: #ffffff !important;
+  padding: 0.75rem 1.5rem !important;
+  border: none !important;
+  border-radius: 4px !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+}
+
+.btn-primary:hover,
+a.btn-primary:hover {
+  background-color: var(--standpoint-accent-hover) !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+button[type="submit"],
+input[type="submit"] {
+  background-color: var(--standpoint-accent) !important;
+  color: #ffffff !important;
+  padding: 0.75rem 1.5rem !important;
+  border: none !important;
+  border-radius: 4px !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  background-color: var(--standpoint-accent-hover) !important;
+}
+
+.btn-secondary,
+a.btn-secondary {
+  background-color: transparent !important;
+  color: var(--standpoint-accent) !important;
+  padding: 0.75rem 1.5rem !important;
+  border: 2px solid var(--standpoint-accent) !important;
+  border-radius: 4px !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+}
+
+.btn-secondary:hover,
+a.btn-secondary:hover {
+  background-color: var(--standpoint-accent) !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* ============================================
+   Forms
+   ============================================ */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--standpoint-text-primary);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--standpoint-border);
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #ffffff;
+  color: var(--standpoint-text-primary);
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--standpoint-accent);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Hidden honeypot field */
+.hidden {
+  display: none !important;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+footer {
+  background-color: var(--standpoint-bg-secondary) !important;
+  border-top: 1px solid var(--standpoint-border) !important;
+  padding: 2rem 0 !important;
+}
+
+/* Footer inner content wrapper - consistent left padding on desktop */
+footer > * {
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  box-sizing: border-box !important;
+}
+
+/* Footer nav spacing */
+footer nav {
+  margin-bottom: 1rem !important;
+}
+
+footer nav ul {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 1.5rem !important;
+  justify-content: flex-start !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none !important;
+}
+
+footer nav ul li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+footer nav a {
+  color: var(--standpoint-text-secondary) !important;
+  text-decoration: none !important;
+  font-size: 0.9rem !important;
+}
+
+footer nav a:hover {
+  color: var(--standpoint-accent) !important;
+}
+
+/* Footer copyright and privacy link */
+footer p {
+  color: var(--standpoint-text-muted) !important;
+  font-size: 0.875rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+footer p a {
+  color: var(--standpoint-accent) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px !important;
+}
+
+footer p a:hover {
+  color: var(--standpoint-accent-hover) !important;
+}
+
+/* ============================================
+   Updates/Blog List Styling
+   ============================================ */
+/* Hide the empty prose section that Congo generates on list pages */
+section.prose {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Reduce gap between list header and first year - target Congo's mt-8 class */
+main > article > section,
+main > article > section.mt-8,
+section.mt-8 {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Year headings - slightly larger, more visible */
+main section h2.mt-12,
+h2.mt-12,
+.list-title {
+  background: none !important;
+  color: var(--standpoint-text-primary) !important;
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+  padding: 0 !important;
+}
+
+/* First year heading - minimal top margin */
+main section h2.mt-12:first-of-type,
+h2.mt-12:first-of-type {
+  margin-top: 0 !important;
+}
+
+/* Remove dotted hr under year */
+hr.border-dotted {
+  display: none !important;
+}
+
+/* Post list items */
+.post-item,
+article.relative {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--standpoint-border);
+}
+
+.post-item:last-child,
+article.relative:last-child {
+  border-bottom: none;
+}
+
+/* Post titles in list */
+.post-item h3 a,
+article.relative h3 a {
+  color: var(--standpoint-text-primary) !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+}
+
+.post-item h3 a:hover,
+article.relative h3 a:hover {
+  color: var(--standpoint-accent) !important;
+}
+
+/* Post meta (date, reading time) */
+.post-meta,
+time,
+.text-sm {
+  color: var(--standpoint-text-muted) !important;
+  font-size: 0.875rem !important;
+}
+
+/* ============================================
+   Single Post Pages
+   ============================================ */
+/* Main article container - no max-width, fills page like footer */
+main > article {
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  box-sizing: border-box !important;
+  padding-top: 2rem !important;
+}
+
+/* Reset Congo's prose padding that causes misalignment */
+main > article .prose,
+main > article > div,
+main > article > section,
+main > article section.prose,
+main > article section.mt-6,
+main > article section.flex {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: 100% !important;
+}
+
+/* Force prose content container to have no extra indentation */
+main > article section > div,
+main > article .prose > div {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Override Tailwind's max-w-prose on content container to match header width */
+main > article section > div.max-w-prose,
+main > article .prose > div.max-w-prose,
+main > article div.max-w-prose {
+  max-width: none !important;
+}
+
+/* Ensure header and content have same width */
+main > article > header.max-w-prose {
+  max-width: none !important;
+}
+
+/* Ensure article footer (with pagination) matches content width */
+main > article > footer.max-w-prose {
+  max-width: none !important;
+}
+
+/* Show the post title with breathing room */
+main > article > header {
+  display: block !important;
+  margin-bottom: 1.5rem !important;
+}
+
+main > article > header h1 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem) !important;
+  margin-bottom: 0.5rem !important;
+}
+
+main > article > header .meta,
+main > article > header time,
+main > article > header .text-sm {
+  color: var(--standpoint-text-muted) !important;
+  font-size: 0.875rem !important;
+}
+
+/* Ensure post content wraps properly and stays within bounds */
+article .prose,
+article .prose p,
+article .prose * {
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  box-sizing: border-box !important;
+}
+
+/* Constrain the inner content div inside prose to prevent overflow */
+article > section > div,
+article > section.prose > div,
+main > article > section > div,
+main > article > section.prose > div,
+section.prose > div.min-h-0,
+section.prose > div.min-w-0 {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+/* ============================================
+   Article Content Indentation
+   ============================================ */
+/* Indent article header and prose, NOT the footer/pagination */
+main > article > header,
+article > header {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  box-sizing: border-box !important;
+  max-width: 100% !important;
+}
+
+main > article > section,
+article > section,
+main > article > section.prose,
+article > section.prose {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  box-sizing: border-box !important;
+  max-width: 100% !important;
+}
+
+/* ============================================
+   Article Footer / Prev-Next Pagination
+   ============================================ */
+/* The pagination is inside article > footer.max-w-prose, not a separate nav */
+
+/* Article footer container - full width, clean styling */
+main > article > footer,
+article > footer,
+article > footer.max-w-prose {
+  max-width: none !important;
+  width: 100% !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* The pt-8 wrapper div inside footer - this creates the gray box */
+article > footer > div,
+article > footer > div.pt-8,
+article > footer .pt-8,
+main > article > footer > div,
+main > article > footer > div.pt-8 {
+  background: transparent !important;
+  padding: 1.5rem 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* The flex container with prev/next links */
+article > footer .flex,
+article > footer .flex.justify-between,
+article > footer div.flex,
+main > article > footer .flex,
+main > article > footer .flex.justify-between {
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  max-width: 100% !important;
+}
+
+/* Hide the dotted hr in pagination - we use our own border */
+article > footer hr,
+article > footer .border-dotted,
+article > footer hr.border-dotted,
+main > article > footer hr {
+  display: none !important;
+}
+
+/* Add a clean top border to the pagination area */
+article > footer > div:first-child,
+article > footer > div.pt-8:first-child,
+main > article > footer > div:first-child {
+  border-top: 1px solid var(--standpoint-border) !important;
+}
+
+/* Style the pagination links cleanly */
+article > footer a,
+main > article > footer a {
+  padding: 0.5rem 0 !important;
+  background: transparent !important;
+  color: var(--standpoint-accent) !important;
+  text-decoration: none !important;
+}
+
+article > footer a:hover,
+main > article > footer a:hover {
+  color: var(--standpoint-accent-hover) !important;
+}
+
+/* Ensure span wrappers are also transparent */
+article > footer span,
+main > article > footer span {
+  background: transparent !important;
+}
+
+/* Legacy nav selectors (keep for any edge cases) */
+main > article + nav,
+article + nav {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 1.5rem 0 !important;
+  border-top: 1px solid var(--standpoint-border) !important;
+  box-sizing: border-box !important;
+  background: transparent !important;
+}
+
+article + nav > div,
+main > article + nav > div,
+article + nav .flex,
+main > article + nav .flex {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  max-width: 100% !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+main > article + nav a,
+article + nav a {
+  padding: 0.5rem 0 !important;
+  background: transparent !important;
+  color: var(--standpoint-accent) !important;
+  text-decoration: none !important;
+}
+
+main > article + nav a:hover,
+article + nav a:hover {
+  color: var(--standpoint-accent-hover) !important;
+}
+
+/* Hide extra horizontal rules before nav */
+article > hr,
+main > article > hr,
+main hr {
+  display: none !important;
+}
+
+/* ============================================
+   Audio Player
+   ============================================ */
+.article-audio {
+  background-color: var(--standpoint-bg-secondary);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--standpoint-border);
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.article-audio .audio-label {
+  font-size: 0.9rem;
+  color: var(--standpoint-text-muted);
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.article-audio audio {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.article-audio .speed-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.article-audio .speed-label {
+  font-size: 0.8rem;
+  color: var(--standpoint-text-muted);
+  margin-right: 0.25rem;
+}
+
+.article-audio .speed-btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  border: 1px solid var(--standpoint-border);
+  background: transparent;
+  color: var(--standpoint-text-secondary);
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.article-audio .speed-btn:hover,
+.article-audio .speed-btn.active {
+  background: var(--standpoint-accent);
+  color: #ffffff;
+  border-color: var(--standpoint-accent);
+}
+
+.article-audio .audio-download {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: var(--standpoint-accent) !important;
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }
+.mt-8 { margin-top: 2rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+
+/* ============================================
+   Hero Section
+   ============================================ */
+.hero-section {
+  text-align: center;
+  padding: 4rem 1.5rem 5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-section h1 {
+  margin-bottom: 1.5rem;
+}
+
+.hero-section .subhead {
+  font-size: 1.375rem;
+  color: var(--standpoint-text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.hero-section .descriptor {
+  font-size: 1.125rem;
+  color: var(--standpoint-text-muted);
+  margin-bottom: 2rem;
+}
+
+.hero-section .cta-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ============================================
+   Content Sections
+   ============================================ */
+.content-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+/* Reduce bottom padding on last content section before footer */
+.content-section:last-of-type,
+section.content-section:last-of-type {
+  padding-bottom: 2rem;
+}
+
+/* Hide empty section that Congo generates after article on homepage only */
+/* Use :has() to target only pages with hero-section (homepage) */
+main#main-content:has(.hero-section) > section:not(.content-section) {
+  display: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 0 !important;
+}
+
+.content-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.content-section p {
+  margin-bottom: 1.25rem;
+}
+
+.content-section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Two column layout for products */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background-color: var(--standpoint-bg-secondary);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--standpoint-border);
+}
+
+.product-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--standpoint-accent) !important;
+}
+
+.product-card .tagline {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--standpoint-text-muted);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--standpoint-border);
+}
+
+/* Use case cards - prepared for future clickable links */
+.use-case-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.use-case-card {
+  background-color: var(--standpoint-bg-primary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--standpoint-border);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* When use case cards become links */
+a.use-case-card {
+  text-decoration: none !important;
+  display: block;
+}
+
+a.use-case-card:hover {
+  border-color: var(--standpoint-accent);
+  box-shadow: 0 2px 8px rgba(45, 90, 90, 0.1);
+}
+
+.use-case-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--standpoint-accent) !important;
+}
+
+.use-case-card p {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: var(--standpoint-text-secondary);
+}
+
+/* ============================================
+   Privacy Section
+   ============================================ */
+.privacy-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .privacy-section {
+    padding: 0 1rem 2rem;
+  }
+}
+
+/* Privacy page - match blog post styling (2rem desktop, 1rem mobile) */
+/* Add padding-bottom to header to create space before HR like blog post date line does */
+main > article:has(.privacy-section) > header {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+main > article:has(.privacy-section) > section.prose {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  main > article:has(.privacy-section) > header,
+  main > article:has(.privacy-section) > section.prose {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* Updates list page - match blog post styling (2rem desktop, 1rem mobile) */
+/* Add padding-top and padding-bottom to header to match blog post spacing */
+main > header {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+  margin-bottom: 24px !important;
+}
+
+main > section {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  main > header,
+  main > section {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* ============================================
+   Contact Section
+   ============================================ */
+/* Target the contact-section within prose to ensure left alignment on wide screens */
+main > article:has(.contact-section) > section.prose .contact-section,
+section.prose .contact-section,
+.contact-section {
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 0 4rem 0 !important;
+  box-sizing: border-box;
+  text-align: left !important;
+}
+
+/* Add 12px margin to first form group to create 36px total gap from HR (24px header margin + 12px) */
+.contact-section form .form-group:first-of-type {
+  margin-top: 12px !important;
+}
+
+/* Ensure form elements stay within contact section - left aligned, not centered */
+.contact-section form {
+  max-width: 600px;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+.contact-section .form-group input,
+.contact-section .form-group textarea,
+.contact-section .form-group select {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-section h2 {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+/* Contact page header */
+.contact-header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.contact-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+  color: var(--standpoint-text-muted);
+  font-size: 1rem;
+}
+
+/* ============================================
+   Simple Layout Pages (Privacy, etc.)
+   ============================================ */
+/* Note: main > article padding is set in Single Post Pages section above */
+
+main > article > .prose:first-child,
+main > article > div:first-child {
+  padding-top: 1rem !important;
+}
+
+/* ============================================
+   Thank You Page
+   ============================================ */
+.thank-you-content {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.thank-you-content h1 {
+  margin-bottom: 1.5rem;
+}
+
+/* ============================================
+   Smooth Scrolling
+   ============================================ */
+html {
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   Mobile Responsive
+   ============================================ */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+
+  .hero-section {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .hero-section .subhead {
+    font-size: 1.125rem;
+  }
+
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .use-case-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Make cards use full width on mobile */
+  .use-case-card,
+  .product-card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .content-section {
+    padding: 3rem 1rem;
+  }
+
+  /* Reduce side padding on grids so cards can be wider */
+  .two-column,
+  .use-case-grid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Override the desktop width constraint on inner content divs */
+  article section > div,
+  article section > div.min-w-0,
+  article section > div.grow,
+  article > section > div.max-w-prose,
+  section.prose > div.grow,
+  .content-section > div,
+  .use-case-grid,
+  .two-column {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .contact-section {
+    padding: 2rem 1rem 3rem;
+  }
+
+  /* Prevent horizontal overflow - but allow pseudo-elements to extend */
+  body, html {
+    overflow-x: hidden !important;
+  }
+
+  /* Content sections need full width on mobile for full-bleed to work */
+  .content-section {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Footer alignment - centered on mobile */
+  footer {
+    text-align: center !important;
+  }
+
+  footer > * {
+    text-align: center !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  footer nav ul {
+    justify-content: center !important;
+  }
+
+  footer p {
+    text-align: center !important;
+  }
+
+  /* Single post pages on mobile */
+  main > article {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Article header and prose indentation on mobile - less padding */
+  main > article > header,
+  article > header,
+  main > article > section,
+  article > section,
+  main > article > section.prose,
+  article > section.prose {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Article footer / pagination on mobile - ensure no gray box */
+  main > article > footer,
+  article > footer,
+  article > footer.max-w-prose,
+  main > article > footer > div,
+  article > footer > div,
+  article > footer .pt-8,
+  article > footer .flex,
+  article > footer .flex.justify-between {
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  main > article > footer,
+  article > footer {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Legacy nav selectors for mobile */
+  main > article + nav,
+  article + nav {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Audio player mobile */
+  .article-audio .speed-controls {
+    justify-content: center;
+  }
+
+  .article-audio .audio-download {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ============================================
+   Small screens (641px - 768px) - left-aligned footer
+   ============================================ */
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  /* Footer stays left-aligned, not centered */
+  footer {
+    text-align: left !important;
+  }
+
+  footer > * {
+    text-align: left !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    margin-left: 0 !important;
+  }
+
+  footer nav ul {
+    justify-content: flex-start !important;
+  }
+
+  footer p {
+    text-align: left !important;
+  }
+
+  /* Article header and prose indentation on medium - 1rem like mobile */
+  main > article > header,
+  article > header,
+  main > article > section,
+  article > section,
+  main > article > section.prose,
+  article > section.prose {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* ============================================
+   FINAL OVERRIDES - Must be at end of file
+   ============================================ */
+/* Override the general section padding for list pages - target by ID */
+/* Spacing: header margin-bottom (24px) + section padding-top (12px) = 36px to match blog post */
+#main-content > section {
+  padding: 0.75rem 2rem 2rem 2rem !important;
+  margin: 0 !important;
+}
+
+#main-content > section.prose {
+  padding: 0 2rem !important;
+  margin: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  #main-content > section {
+    padding: 0.75rem 1rem 2rem 1rem !important;
+  }
+  #main-content > section.prose {
+    padding: 0 1rem !important;
+  }
+}
+
+/* Remove article width constraint - let it fill the page like footer does */
+#main-content > article,
+main#main-content > article,
+main > article,
+article {
+  max-width: none !important;
+}
+
+/* Override Tailwind's max-w-prose on OUTER containers only */
+/* NOT on the inner prose content div which needs width constraint */
+header.max-w-prose,
+footer.max-w-prose,
+article > header,
+article > footer,
+article > section {
+  max-width: none !important;
+}
+
+/* The inner prose content div MUST have a width constraint */
+/* This is the div with class "min-h-0 min-w-0 max-w-prose grow" */
+article section > div,
+article section > div.min-w-0,
+article section > div.grow,
+article > section > div.max-w-prose,
+section.prose > div.grow {
+  max-width: calc(100% - 4rem) !important;  /* Account for section padding */
+  box-sizing: border-box !important;
+  flex-grow: 1 !important;
+  flex-shrink: 1 !important;
+}
+
+/* Remove nav width constraint - let it fill the page like footer does */
+#main-content > article + nav,
+main > article + nav,
+article + nav {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* CRITICAL: Remove ALL gray background from article footer/pagination at all sizes */
+#main-content > article > footer,
+#main-content > article > footer *,
+main > article > footer,
+main > article > footer *,
+article > footer,
+article > footer *,
+article > footer > div,
+article > footer > div *,
+article > footer .pt-8,
+article > footer .flex {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Contact section - override prose/article width expansion */
+.contact-section,
+div.contact-section,
+article .contact-section,
+.prose .contact-section {
+  max-width: 600px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* ============================================
+   Updates Page - Year Headings
+   ============================================ */
+/* Option E: Spacing + subtle divider above */
+main section h2.mt-12,
+main section h2.first\:mt-8 {
+  position: relative;
+  padding-top: 1.5rem;
+  margin-top: 2.5rem !important;
+  margin-bottom: 1.5rem !important;
+  color: var(--standpoint-text-primary) !important;
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+}
+
+main section h2.mt-12::before,
+main section h2.first\:mt-8::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, var(--standpoint-accent), var(--standpoint-border) 30%, transparent 60%);
+}
+
+/* First year heading doesn't need top divider */
+main section h2.first\:mt-8:first-of-type::before {
+  display: none;
+}
+
+/* ============================================
+   PRIVACY PAGE - FINAL OVERRIDE
+   Must be at very end to override all other rules
+   ============================================ */
+/* Target Privacy page by .privacy-section class - apply 2rem indentation */
+/* Need high specificity to override earlier rules */
+/* Spacing: header margin-bottom (24px) + section padding-top (0) + first p margin (12px) = 36px to match blog post */
+html body main article:has(.privacy-section) > section.prose.mt-6.max-w-full,
+main article:has(.privacy-section) > section.prose.mt-6,
+article:has(.privacy-section) > section.prose {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Normalize first paragraph margin in privacy section to match blog post */
+.privacy-section > p:first-child {
+  margin-top: 12px !important;
+}
+
+@media screen and (max-width: 768px) {
+  html body main article:has(.privacy-section) > section.prose.mt-6.max-w-full,
+  main article:has(.privacy-section) > section.prose.mt-6,
+  article:has(.privacy-section) > section.prose {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* ============================================
+   404 Page Styles
+   ============================================ */
+.four-oh-four {
+  max-width: 42rem;
+  padding: 4rem 0;
+}
+
+.four-oh-four h1 {
+  color: var(--standpoint-text-primary);
+}
+
+.four-oh-four ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.four-oh-four ul li {
+  padding: 0.35rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.four-oh-four ul li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--standpoint-accent);
+}
+
+.four-oh-four .cta-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

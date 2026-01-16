@@ -9,7 +9,7 @@ description: "Infrastructure for perspective-aware AI"
 
 <p class="subhead">See decisions from every standpoint. Deploy AI that coordinates, not just connects.</p>
 
-<p class="descriptor">Standpoint Labs builds infrastructure for perspective-aware AI.</p>
+<p class="descriptor">We build infrastructure for perspective-aware AI.</p>
 
 <div class="cta-group">
   <a href="#the-problem" class="btn-primary">Learn More</a>
@@ -26,7 +26,7 @@ description: "Infrastructure for perspective-aware AI"
 
 You have a team of 8 AI agents. One makes a decision without understanding how it affects the others. Now multiply that by 100 agents.
 
-The problem isn't wrong instructions - it's that agents don't have access to the full picture. They don't understand implications. They don't see knock-on effects.
+The problem isn't wrong instructions. It's that agents don't have access to the full picture. They don't understand implications. They don't see knock-on effects.
 
 **Are you an agent babysitter? Or do you have infrastructure that lets them coordinate?**
 
@@ -66,7 +66,7 @@ Context graphs give AI ACCESS to information. They don't model how it RELATES. T
 
 Greater autonomy + Limited understanding = Chaos
 
-Standpoint Labs is the missing layer.
+We're the missing layer.
 
 {{< /section >}}
 
@@ -84,7 +84,7 @@ Standpoint Labs is the missing layer.
 
 <p class="tagline">Core maps the standpoints.</p>
 
-A relational core that maps what connections mean to each party - not just that connections exist, but what matters, why, and how, from each perspective.
+A relational core that maps what connections mean to each party. Not just that connections exist, but what matters, why, and how, from each perspective.
 
 - Maps relationships from multiple perspectives
 - Captures what's at stake for each party
@@ -124,7 +124,7 @@ A collaboration mesh that lets AI systems, humans, and human-AI teams share cont
 
 #### Enterprise Leaders
 
-Run scenarios on strategic decisions; see what ripples through your org before you commit.
+Run scenarios on strategic decisions. See what ripples through your org before you commit.
 
 </div>
 
@@ -140,7 +140,7 @@ Deploy agent systems that actually coordinate instead of stepping on each other.
 
 #### Product Managers
 
-Understand how feature changes affect engineering, support, sales, legal, and users - simultaneously.
+Understand how feature changes affect engineering, support, sales, legal, and users. Simultaneously.
 
 </div>
 
@@ -162,7 +162,7 @@ Your personal team of 8-15+ agents working in harmony, not chaos. Know they're c
 
 ## Built by Someone Who Needed This
 
-**Christoph Plough** - Founder
+**Christoph Plough**, Founder
 
 20+ years building enterprise technology. Employee #13 at G-Log, designed the architecture for what became Oracle Transportation Management. Co-founded MavenWire, grew it from zero to $14M/year revenue, 150+ employees, global offices, entirely bootstrapped. Sold 2016. Not the outcome I'd hoped for, but I learned what matters: protecting people, aligning incentives, and acting decisively when it counts.
 
@@ -170,11 +170,11 @@ I built this because I needed it for my own work. Couldn't find it anywhere. Spe
 
 ### In Partnership with Oznog
 
-Standpoint Labs collaborates with <a href="https://oznog.com" target="_blank" rel="noopener">Oznog</a> on building sovereign infrastructure for the fifth story: genuine human-AI interdependence. Different entities, shared values.
+We collaborate with <a href="https://oznog.com" target="_blank" rel="noopener">Oznog</a> on building sovereign infrastructure for the fifth story: genuine human-AI interdependence. Different entities, shared values. <a href="https://worthchoosing.org" target="_blank" rel="noopener">What's the fifth story?</a>
 
 ### Seeking
 
-- **Operations / Integrator** - Someone who thrives on systems, processes, and making trains run on time
-- **Go-to-market advisor** - AI infrastructure experience, enterprise relationships
+- **Operations / Integrator**: Someone who thrives on systems, processes, and making trains run on time
+- **Go-to-market advisor**: AI infrastructure experience, enterprise relationships
 
 {{< /section >}}

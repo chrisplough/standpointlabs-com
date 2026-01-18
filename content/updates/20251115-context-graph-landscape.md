@@ -2,6 +2,7 @@
 title: "Mapping the Context Graph Landscape"
 date: 2025-11-15T11:00:00-07:00
 description: "Understanding where Standpoint fits in the emerging ecosystem."
+slug: "context-graph-landscape"
 draft: false
 ---
 

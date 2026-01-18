@@ -2,6 +2,7 @@
 title: "Website Launch"
 date: 2026-01-16T08:00:00-07:00
 description: "standpointlabs.com is live."
+slug: "website-launch"
 draft: false
 ---
 

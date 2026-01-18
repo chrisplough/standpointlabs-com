@@ -2,6 +2,7 @@
 title: "Looking for Design Partners"
 date: 2025-12-20T14:00:00-07:00
 description: "The kind of organizations we want to build with."
+slug: "design-partner-search"
 draft: false
 ---
 

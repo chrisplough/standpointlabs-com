@@ -2,6 +2,7 @@
 title: "Introducing the Mesh Concept"
 date: 2025-12-04T15:00:00-07:00
 description: "From modeling perspectives to enabling coordination."
+slug: "mesh-concept"
 draft: false
 ---
 

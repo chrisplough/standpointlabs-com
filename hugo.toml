@@ -13,7 +13,7 @@ copyright = "© 2026 Standpoint Labs LLC · [Privacy Policy](/privacy/)"
   enableSearch = false
   enableCodeCopy = true
   description = "Infrastructure for perspective-aware AI"
-  keywords = ["AI agents", "perspective-aware AI", "AI coordination", "context graphs", "enterprise AI", "multi-agent systems"]
+  keywords = ["Digital Intelligence", "fifth story", "AI agents", "perspective-aware AI", "AI coordination", "context graphs", "enterprise AI", "multi-agent systems", "relational core", "relational intelligence", "DI mesh", "standpoint core", "standpoint mesh"]
 
   [params.defaultImage]
     src = "og-image.png"

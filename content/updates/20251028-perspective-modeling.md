@@ -15,3 +15,7 @@ Current graph databases and knowledge systems treat connections as edges with pr
 This is the foundation of what we're now calling "perspective-aware modeling." Not just what's connected, but what that connection *means* from each standpoint.
 
 Feels like the architecture is finally becoming clear.
+
+---
+
+*The framework for perspective-aware collaboration is explored in depth in [On the Codex](https://chrisplough.com/writings/on-the-codex/).*

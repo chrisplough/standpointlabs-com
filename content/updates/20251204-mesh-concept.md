@@ -20,3 +20,7 @@ Key principles emerging:
 The two products are starting to feel like a coherent whole. Core provides understanding, Mesh enables action.
 
 More details as the architecture firms up.
+
+---
+
+*For a look at how mesh-based collaboration works in practice across multiple domains, see [On Dragon Rider Returns](https://chrisplough.com/writings/on-dragon-rider-returns/).*

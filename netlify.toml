@@ -1,9 +1,9 @@
 [build]
   publish = "public"
-  command = "rm -rf themes/congo && git clone --depth 1 --branch v2.8.1 https://github.com/jpanther/congo.git themes/congo && hugo --gc --minify"
+  command = "rm -rf themes/congo && git clone --depth 1 --branch v2.10.0 https://github.com/jpanther/congo.git themes/congo && hugo --gc --minify"
 
 [build.environment]
-  HUGO_VERSION = "0.121.0"
+  HUGO_VERSION = "0.140.0"
 
 [context.production.environment]
   HUGO_ENV = "production"

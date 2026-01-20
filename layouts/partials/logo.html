@@ -5,19 +5,19 @@
     <a href="{{ "" | relLangURL }}" class="mr-2">
       <!-- prettier-ignore-attribute -->
       <img
-        src="{{ $logo.Permalink }}"
+        src="{{ $logo.RelPermalink }}"
         width="{{ div $logo.Width 2 }}"
         height="{{ div $logo.Height 2 }}"
         class="max-h-[10rem] max-w-[10rem] object-scale-down object-left
-        {{ if $logo_dark }}dark:hidden flex{{ end }}"
+        {{ if $logo_dark }}hidden dark:flex{{ end }}"
         alt="{{ .Site.Title }}"
       />
       {{- if $logo_dark }}
         <img
-          src="{{ $logo_dark.Permalink }}"
+          src="{{ $logo_dark.RelPermalink }}"
           width="{{ div $logo_dark.Width 2 }}"
           height="{{ div $logo_dark.Height 2 }}"
-          class="hidden max-h-[10rem] max-w-[10rem] object-scale-down object-left dark:flex"
+          class="max-h-[10rem] max-w-[10rem] object-scale-down object-left dark:hidden"
           alt="{{ .Site.Title }}"
         />
       {{- end }}

@@ -178,3 +178,18 @@ We collaborate with <a href="https://oznog.com" target="_blank" rel="noopener">O
 - **Go-to-market advisor**: AI infrastructure experience, enterprise relationships
 
 {{< /section >}}
+
+---
+
+{{< section id="follow" class="content-section email-signup-section" >}}
+
+## Follow the build
+
+Infrastructure for AI that coordinates. Infrequent. Substantive.
+
+<form action="https://buttondown.com/api/emails/embed-subscribe/standpointlabs" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/standpointlabs', 'popupwindow')" class="signup-form">
+  <input type="email" name="email" placeholder="your@email.com" required />
+  <button type="submit">Subscribe</button>
+</form>
+
+{{< /section >}}

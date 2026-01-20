@@ -31,6 +31,7 @@ We don't sell, rent, or share your personal information with third parties.
 
 - **Forms:** Processed through Netlify and Tally
 - **Analytics:** GoatCounter (privacy-preserving, no personal data collected)
+- **Email:** Buttondown (privacy-focused newsletter service, no tracking pixels)
 
 ### Questions
 

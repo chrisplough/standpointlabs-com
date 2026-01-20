@@ -1732,3 +1732,89 @@ article:has(.privacy-section) > section.prose {
   gap: 1rem;
   flex-wrap: wrap;
 }
+
+/* ============================================
+   Email Signup Section
+   ============================================ */
+.email-signup-section {
+  text-align: center;
+  padding-top: 3rem !important;
+  padding-bottom: 2rem !important;
+  position: relative;
+}
+
+/* Light HR above email signup section */
+.email-signup-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 800px;
+  height: 1px;
+  background-color: var(--standpoint-border);
+}
+
+.email-signup-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.email-signup-section p {
+  color: var(--standpoint-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.email-signup-section .signup-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.email-signup-section .signup-form input[type="email"] {
+  padding: 0 1rem !important;
+  margin: 0 !important;
+  background-color: #ffffff;
+  border: 1px solid var(--standpoint-border);
+  border-radius: 4px;
+  color: var(--standpoint-text-primary);
+  font-family: inherit;
+  font-size: 1rem;
+  width: 260px !important;
+  max-width: 100%;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  height: 42px !important;
+}
+
+.email-signup-section .signup-form input[type="email"]::placeholder {
+  color: var(--standpoint-text-muted);
+}
+
+.email-signup-section .signup-form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--standpoint-accent);
+}
+
+.email-signup-section .signup-form button {
+  padding: 0 1.5rem !important;
+  margin: 0 !important;
+  background-color: var(--standpoint-accent);
+  border: 1px solid var(--standpoint-accent);
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  height: 42px !important;
+}
+
+.email-signup-section .signup-form button:hover {
+  background-color: var(--standpoint-accent-hover);
+  border-color: var(--standpoint-accent-hover);
+}

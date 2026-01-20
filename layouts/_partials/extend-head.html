@@ -38,37 +38,8 @@
 <meta name="twitter:image" content="{{ $ogImage | absURL }}" />
 <meta name="twitter:image:alt" content="{{ .Site.Title }} - {{ .Site.Params.description }}" />
 
-{{/* Structured Data - Organization schema for homepage */}}
-{{ if .IsHome }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "{{ .Site.Title }}",
-  "description": "{{ .Site.Params.description }}",
-  "url": "{{ .Site.BaseURL }}",
-  "logo": "{{ "og-image.png" | absURL }}",
-  "sameAs": []
-}
-</script>
-{{ end }}
-
-{{/* Structured Data - WebPage schema for all pages */}}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}",
-  "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}",
-  "url": "{{ .Permalink }}",
-  "inLanguage": "{{ .Site.Language.Lang | default "en" }}",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "{{ .Site.Title }}",
-    "url": "{{ .Site.BaseURL }}"
-  }
-}
-</script>
+{{/* Schema.org structured data */}}
+{{ partial "schema.html" . }}
 
 {{/* GoatCounter Analytics */}}
 <script data-goatcounter="https://standpointlabs.goatcounter.com/count"

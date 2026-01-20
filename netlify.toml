@@ -1,19 +1,6 @@
 [build]
   publish = "public"
-  command = """
-rm -rf themes/congo && \
-git clone https://github.com/jpanther/congo.git themes/congo && \
-cp -r themes/congo/layouts/_partials themes/congo/layouts/partials && \
-cp -r themes/congo/layouts/_shortcodes themes/congo/layouts/shortcodes && \
-cp -r layouts/shortcodes/* themes/congo/layouts/shortcodes/ 2>/dev/null || true && \
-cp -r layouts/shortcodes/* themes/congo/layouts/_shortcodes/ 2>/dev/null || true && \
-cp -r layouts/_partials/* themes/congo/layouts/partials/ 2>/dev/null || true && \
-cp -r layouts/_partials/* themes/congo/layouts/_partials/ 2>/dev/null || true && \
-cp layouts/404.html themes/congo/layouts/ 2>/dev/null || true && \
-mkdir -p themes/congo/layouts/_default && \
-cp themes/congo/layouts/*.html themes/congo/layouts/_default/ 2>/dev/null || true && \
-hugo --gc --minify
-"""
+  command = "rm -rf themes/congo && git clone --depth 1 --branch v2.8.1 https://github.com/jpanther/congo.git themes/congo && hugo --gc --minify"
 
 [build.environment]
   HUGO_VERSION = "0.121.0"

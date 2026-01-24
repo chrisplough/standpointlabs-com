@@ -9,7 +9,7 @@ description: "Infrastructure for perspective-aware AI"
 
 <p class="subhead">See decisions from every standpoint. Deploy AI that coordinates, not just connects.</p>
 
-<p class="descriptor">We build infrastructure for perspective-aware AI.</p>
+<p class="descriptor">Coordination infrastructure for perspective-aware AI.</p>
 
 <div class="cta-group">
   <a href="#the-problem" class="btn-primary">Learn More</a>
@@ -20,35 +20,53 @@ description: "Infrastructure for perspective-aware AI"
 
 ---
 
-{{< section id="the-problem" class="content-section" >}}
+{{< section id="the-problem" class="content-section scenario-section alt-bg" >}}
 
-## The Agent Babysitter Problem
+## One Promotion. Five Blind Spots.
 
-You have a team of 8 AI agents. One makes a decision without understanding how it affects the others. Now multiply that by 100 agents.
+<p class="scenario-intro">Leadership promotes Sarah to VP Engineering. She's earned it. She's ready.</p>
 
-The problem isn't wrong instructions. It's that agents don't have access to the full picture. They don't understand implications. They don't see knock-on effects.
+But Sarah was the invisible bottleneck on everything critical:
 
-**Are you an agent babysitter? Or do you have infrastructure that lets them coordinate?**
+<div class="scenario-list">
+
+- **Avalon** (Q2 launch) depends on her technical decisions
+- **Acme** (biggest customer) depends on her relationship
+- **TechPartner** integration depends on her architecture
+- **Elena's** growth depends on her mentorship
+- **Marcus** expected the role she just got
+
+</div>
+
+No one mapped the implications before announcing.
+
+<ul class="scenario-timeline">
+  <li><span class="month">Month 3:</span> <span class="event">Marcus is interviewing elsewhere.</span></li>
+  <li><span class="month">Month 5:</span> <span class="event">Acme is asking hard questions.</span></li>
+  <li><span class="month">Month 6:</span> <span class="event">Elena blocked. TechPartner stalled. Avalon at risk.</span></li>
+</ul>
+
+**One decision that made sense became a cascade no one saw coming.**
+
+<p class="scenario-punchline">This is the perspective problem. We solve it.</p>
+
+{{< /section >}}
 
 ---
 
-### No One's Job
+{{< section id="agent-babysitter" class="content-section" >}}
 
-Engineering just changed the onboarding process to accommodate new AI tools.
+## The Agent Babysitter Problem
 
-Legal updated the employment contract for compliance.
+You have 8 AI agents. One makes a decision without understanding how it affects the others. Now multiply that by 100.
 
-Marketing redesigned the job posting template.
+The problem isn't wrong instructions. It's that agents don't understand implications. They don't see knock-on effects. They have data. They don't have meaning.
 
-Linda in HR found out when three new hires showed up confused on day one.
+**Are you an agent babysitter? Or do you have infrastructure that lets them coordinate?**
 
-Why? Because no one's job is to understand how changes ripple through the system.
+<p class="scenario-punchline">This is the coordination problem. We solve it, too.</p>
 
-**Until now.**
-
-And it's about to get exponentially worse as AI agents multiply the coordination problem.
-
-Current AI tools can't solve this. Here's why.
+Current AI tools can't solve this. Here's why:
 
 {{< /section >}}
 
@@ -64,9 +82,13 @@ That's necessary. But it's not sufficient.
 
 Context graphs give AI ACCESS to information. They don't model how it RELATES. They don't track IMPLICATIONS. They don't COORDINATE actions.
 
+Most harm comes from filling what we can't see with what we fear. Agents do the same: they fill what they can't see with data. Neither is meaning.
+
+Context graphs tell AI what exists. We model what it means, to each party, from each perspective.
+
 Greater autonomy + Limited understanding = Chaos
 
-We're the missing layer.
+<p class="scenario-punchline">We're the missing layer.</p>
 
 {{< /section >}}
 
@@ -110,6 +132,16 @@ A collaboration mesh that lets AI systems, humans, and human-AI teams share cont
 
 </div>
 
+<div class="coordination-tagline">
+
+<p><strong>Seeing without acting is a museum.</strong></p>
+
+<p><strong>Acting without seeing is a wrecking ball.</strong></p>
+
+<p class="accent">Together, they're coordination infrastructure.</p>
+
+</div>
+
 {{< /section >}}
 
 ---
@@ -124,7 +156,7 @@ A collaboration mesh that lets AI systems, humans, and human-AI teams share cont
 
 #### Enterprise Leaders
 
-Run scenarios on strategic decisions. See what ripples through your org before you commit.
+See how your decision lands across 12 stakeholder groups. Stop doing damage control. Start deciding with confidence.
 
 </div>
 
@@ -132,7 +164,7 @@ Run scenarios on strategic decisions. See what ripples through your org before y
 
 #### AI/ML Teams
 
-Deploy agent systems that actually coordinate instead of stepping on each other.
+Deploy 50 agents that actually coordinate. Stop babysitting. Start scaling.
 
 </div>
 
@@ -140,7 +172,7 @@ Deploy agent systems that actually coordinate instead of stepping on each other.
 
 #### Product Managers
 
-Understand how feature changes affect engineering, support, sales, legal, and users. Simultaneously.
+See what your feature change breaks before you ship. Stop fighting fires. Start shipping forward.
 
 </div>
 
@@ -148,7 +180,7 @@ Understand how feature changes affect engineering, support, sales, legal, and us
 
 #### Individuals with AI Agents
 
-Your personal team of 8-15+ agents working in harmony, not chaos. Know they're considering what matters to you.
+Your personal team of 8-15+ agents working in harmony. Stop managing chaos. Start trusting coordination.
 
 </div>
 
@@ -164,9 +196,9 @@ Your personal team of 8-15+ agents working in harmony, not chaos. Know they're c
 
 **Christoph Plough**, Founder
 
-20+ years building enterprise technology. Employee #13 at G-Log, designed the architecture for what became Oracle Transportation Management. Co-founded MavenWire, grew it from zero to $14M/year revenue, 150+ employees, global offices, entirely bootstrapped. Sold 2016. Not the outcome I'd hoped for, but I learned what matters: protecting people, aligning incentives, and acting decisively when it counts.
+20+ years building enterprise technology. Employee #13 at G-Log, designed the architecture for Oracle Transportation Management and led its integration post-acquisition. Co-founded MavenWire, grew it from zero to $14M/year revenue, 150+ employees, global offices, entirely bootstrapped. Sold 2016. Not the outcome I'd hoped for, but I learned what matters: protecting people, aligning incentives, and acting decisively when it counts.
 
-I built this because I needed it for my own work. Couldn't find it anywhere. Spent months looking. So I'm creating it. <a href="https://chrisplough.com/my-why" target="_blank" rel="noopener">Why this matters to me</a>. <a href="https://chrisplough.com/writings/on-returning-to-commercial-space/" target="_blank" rel="noopener">The origin story</a>.
+I built this because I needed it for my own work. Couldn't find it anywhere. Spent months looking. So we're creating it. <a href="https://chrisplough.com/my-why" target="_blank" rel="noopener">Why this matters to me</a>. <a href="https://chrisplough.com/writings/on-returning-to-commercial-space/" target="_blank" rel="noopener">The origin story</a>.
 
 ### In Partnership with Oznog
 

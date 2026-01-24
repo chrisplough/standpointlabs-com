@@ -1163,6 +1163,87 @@ main#main-content:has(.hero-section) > section:not(.content-section) {
   border-bottom: 1px solid var(--standpoint-border);
 }
 
+/* Coordination tagline after product cards */
+.coordination-tagline {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.coordination-tagline p {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+  color: var(--standpoint-text-primary);
+}
+
+.coordination-tagline p strong {
+  font-weight: 600;
+}
+
+.coordination-tagline .accent {
+  color: var(--standpoint-accent);
+  font-weight: 600;
+}
+
+/* Scenario/Story sections (like Sarah promotion) */
+.scenario-section h2 {
+  margin-bottom: 1.25rem;
+}
+
+.scenario-section .scenario-intro {
+  font-size: 1.25rem;
+  color: var(--standpoint-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.scenario-section .scenario-list {
+  margin: 1.5rem 0;
+}
+
+.scenario-section .scenario-outcome {
+  margin-top: 1.5rem;
+}
+
+.scenario-section .scenario-outcome p {
+  margin-bottom: 0.5rem;
+}
+
+/* Timeline for scenario outcomes */
+.scenario-timeline {
+  margin: 1.5rem 0;
+  padding-left: 0;
+}
+
+.scenario-timeline li {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+  padding-left: 0 !important;
+}
+
+.scenario-timeline li::before {
+  content: none !important;
+}
+
+.scenario-timeline .month {
+  font-weight: 600;
+  color: var(--standpoint-accent);
+  min-width: 5rem;
+  flex-shrink: 0;
+}
+
+.scenario-timeline .event {
+  color: var(--standpoint-text-secondary);
+}
+
+.scenario-section .scenario-punchline,
+.content-section .scenario-punchline,
+p.scenario-punchline {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--standpoint-accent);
+  margin-top: 1.5rem;
+}
+
 /* Use case cards - prepared for future clickable links */
 .use-case-grid {
   display: grid;

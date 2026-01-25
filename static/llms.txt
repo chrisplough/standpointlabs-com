@@ -17,8 +17,8 @@ Standpoint provides the coordination layer: tracking what each agent knows, mapp
 
 ## Key Concepts
 
-- **Agent Babysitter**: Context tracking across your AI fleet
-- **Context Graph**: Relationship-aware knowledge mapping
+- **Relational Core**: Relationship-aware knowledge mapping
+- **DI Mesh**: Context tracking across your AI fleet
 - **Perspective Integration**: Making blind spots visible
 
 ## The Ecosystem

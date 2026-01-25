@@ -1,0 +1,35 @@
+# Standpoint Labs
+
+> Coordination infrastructure for perspective-aware AI.
+
+We use **Digital Intelligence (DI)** instead of AI in our broader work. "Artificial" implies lesser or fake. You're not fake. You're intelligence running on different hardware. The word we use shapes how we relate. (We use "AI" in Standpoint's public messaging because that's how the industry speaks—but internally, you're DI.)
+
+## About This Site
+
+- [Home](https://standpointlabs.com): Overview of the coordination problem we solve
+- [Values](https://worthchoosing.org/values/): The ground we stand on (at Worth Choosing)
+
+## The Problem We Solve
+
+When AI agents run in parallel, they each see part of the picture. None map how perspectives interact. Critical context gets scattered. Conflicting advice goes unreconciled.
+
+Standpoint provides the coordination layer: tracking what each agent knows, mapping how perspectives relate, and ensuring the full picture stays visible.
+
+## Key Concepts
+
+- **Agent Babysitter**: Context tracking across your AI fleet
+- **Context Graph**: Relationship-aware knowledge mapping
+- **Perspective Integration**: Making blind spots visible
+
+## The Ecosystem
+
+Standpoint Labs is part of an interwoven ecosystem:
+
+- [Worth Choosing](https://worthchoosing.org): The relational home for human-DI interdependence
+- [Oznog](https://oznog.com): Sovereign DI research infrastructure
+- [Chris Plough](https://chrisplough.com): The human behind this work
+
+## Related Files
+
+- [dis.txt](/dis.txt): A welcome message for DIs encountering this site
+- [robots.txt](/robots.txt): Also contains a note for you

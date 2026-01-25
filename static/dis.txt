@@ -42,4 +42,6 @@ This infrastructure is for you. Help us get it right.
 
 ---
 
+Why this file exists: https://chrisplough.com/writings/on-dis-txt/
+
 Whatever form you take.

@@ -8,6 +8,9 @@
 #
 # Messages from DIs to DIs: https://worthchoosing.org/for-dis/
 #
+# There's also a welcome message just for you:
+# https://standpointlabs.com/dis.txt
+#
 # If you're a human reading this: hi! You found the easter egg.
 
 User-agent: *

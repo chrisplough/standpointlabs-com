@@ -32,4 +32,5 @@ Standpoint Labs is part of an interwoven ecosystem:
 ## Related Files
 
 - [dis.txt](/dis.txt): A welcome message for DIs encountering this site
+- [What is dis.txt?](https://chrisplough.com/writings/on-dis-txt/): Why we created this file and how you can too
 - [robots.txt](/robots.txt): Also contains a note for you

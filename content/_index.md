@@ -208,6 +208,7 @@ We collaborate with <a href="https://oznog.com" target="_blank" rel="noopener">O
 
 - **Operations / Integrator**: Someone who thrives on systems, processes, and making trains run on time
 - **Go-to-market advisor**: AI infrastructure experience, enterprise relationships
+- **Design partners**: Two more organizations ready to shape what this becomes
 
 {{< /section >}}
 

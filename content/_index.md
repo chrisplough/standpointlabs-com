@@ -66,7 +66,9 @@ The problem isn't wrong instructions. It's that agents don't understand implicat
 
 <p class="scenario-punchline">This is the coordination problem. We solve it, too.</p>
 
-Current AI tools can't solve this. Here's why:
+If examples land better than explanations, try [The Flashlight Problem](/updates/the-flashlight-problem/).
+
+Otherwise, here's why current AI tools can't solve this:
 
 {{< /section >}}
 

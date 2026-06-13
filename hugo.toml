@@ -1,6 +1,6 @@
 baseURL = "https://standpointlabs.com/"
-languageCode = "en-us"
-title = "StandpointLabs"
+locale = "en-us"
+title = "Standpoint Labs"
 theme = "congo"
 buildFuture = true
 copyright = "© 2026 Standpoint Labs LLC · [Privacy Policy](/privacy/) · [RSS](/index.xml)"
@@ -12,8 +12,8 @@ copyright = "© 2026 Standpoint Labs LLC · [Privacy Policy](/privacy/) · [RSS]
   defaultThemeColor = "#FAFAFA"
   enableSearch = false
   enableCodeCopy = true
-  description = "Infrastructure for perspective-aware AI"
-  keywords = ["Digital Intelligence", "fifth story", "AI agents", "perspective-aware AI", "AI coordination", "context graphs", "enterprise AI", "multi-agent systems", "relational core", "relational intelligence", "DI mesh", "standpoint core", "standpoint mesh"]
+  description = "The relational layer for connected sovereignty"
+  keywords = ["relational infrastructure", "connected sovereignty", "sovereign AI", "self-hosted agents", "agent alignment", "AI agents", "perspective-aware AI", "AI coordination", "context graphs", "community intelligence", "multi-agent systems", "relational core", "relational intelligence", "DI mesh", "standpoint core", "standpoint mesh", "Digital Intelligence", "fifth story"]
 
   [params.defaultImage]
     src = "og-image.png"

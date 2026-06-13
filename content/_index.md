@@ -1,18 +1,18 @@
 ---
 title: "Standpoint Labs"
-description: "Infrastructure for perspective-aware AI"
+description: "The relational layer for connected sovereignty"
 ---
 
 <div class="hero-section">
 
-# AI Agents Are Here. Understanding Isn't.
+# Your Tools Pull You Apart. Technology Should Work in Harmony With You.
 
-<p class="subhead">See decisions from every standpoint. Deploy AI that coordinates, not just connects.</p>
+<p class="subhead">Every platform wants you molded to its way of working, inside its silo. We build relational infrastructure for the other path: systems that understand what connections mean, adapt to how people actually work, and answer to you.</p>
 
-<p class="descriptor">Coordination infrastructure for perspective-aware AI.</p>
+<p class="descriptor">The relational layer for connected sovereignty.</p>
 
 <div class="cta-group">
-  <a href="#the-problem" class="btn-primary">Learn More</a>
+  <a href="#why-standpoint" class="btn-primary">Why Standpoint</a>
   <a href="/contact/" class="btn-secondary">Connect</a>
 </div>
 
@@ -20,119 +20,121 @@ description: "Infrastructure for perspective-aware AI"
 
 ---
 
-{{< section id="the-problem" class="content-section scenario-section alt-bg" >}}
+{{< section id="why-standpoint" class="content-section alt-bg" >}}
 
-## One Promotion. Five Blind Spots.
+## Every Relationship Looks Different Depending on Where You Stand
 
-<p class="scenario-intro">Leadership promotes Sarah to VP Engineering. She's earned it. She's ready.</p>
+An unanswered message is overwhelm on one side and feels like rejection on the other. A new hire is relief to the founder, uncertainty to a teammate, and a whole new life to the person arriving. The same connection never means the same thing twice.
 
-But Sarah was the invisible bottleneck on everything critical:
+Most systems hold one view and call it truth. They give AI access to information without modeling what it means, to whom, and why.
 
-<div class="scenario-list">
+We map the standpoints.
 
-- **Avalon** (Q2 launch) depends on her technical decisions
-- **Acme** (biggest customer) depends on her relationship
-- **TechPartner** integration depends on her architecture
-- **Elena's** growth depends on her mentorship
-- **Marcus** expected the role she just got
-
-</div>
-
-No one mapped the implications before announcing.
-
-<ul class="scenario-timeline">
-  <li><span class="month">Month 3:</span> <span class="event">Marcus is interviewing elsewhere.</span></li>
-  <li><span class="month">Month 5:</span> <span class="event">Acme is asking hard questions.</span></li>
-  <li><span class="month">Month 6:</span> <span class="event">Elena blocked. TechPartner stalled. Avalon at risk.</span></li>
-</ul>
-
-**One decision that made sense became a cascade no one saw coming.**
-
-<p class="scenario-punchline">This is the perspective problem. We solve it.</p>
+<p class="scenario-punchline">That's the whole company, in one word.</p>
 
 {{< /section >}}
 
 ---
 
-{{< section id="agent-babysitter" class="content-section" >}}
+{{< section id="what-gets-built" class="content-section" >}}
 
-## The Agent Babysitter Problem
+## What Gets Built on This
 
-You have 8 AI agents. One makes a decision without understanding how it affects the others. Now multiply that by 100.
+Relational Core is the layer. Partners build the applications. Four of the applications it's being designed to carry:
 
-The problem isn't wrong instructions. It's that agents don't understand implications. They don't see knock-on effects. They have data. They don't have meaning.
+<div class="use-case-grid">
 
-**Are you an agent babysitter? Or do you have infrastructure that lets them coordinate?**
+<div class="use-case-card">
 
-<p class="scenario-punchline">This is the coordination problem. We solve it, too.</p>
+#### A community that actually connects people
 
-If examples land better than explanations, try [The Flashlight Problem](/updates/the-flashlight-problem/).
+An app surfaces the right introduction at the right moment, because the layer beneath it knows what each member seeks, offers, and protects. Genuine opportunity instead of networking noise.
 
-Otherwise, here's why current AI tools can't solve this:
+</div>
+
+<div class="use-case-card">
+
+#### A decision that doesn't cascade blind
+
+In a 14-person company, everyone is load-bearing. A planning tool shows what one resignation means to each client, teammate, and project before the dominoes fall, not after.
+
+</div>
+
+<div class="use-case-card">
+
+#### Agents that stay in alignment
+
+An agent acting for you should understand what its actions mean to the people involved. Prompts and rules are fragile. Understanding holds.
+
+</div>
+
+<div class="use-case-card">
+
+#### A hard conversation that goes differently
+
+Coaching, mediation, repair: a practitioner's tool that knows what each person protects, seeks, and fears, so the conversation starts from understanding instead of guesswork.
+
+</div>
+
+</div>
+
+<p class="scenario-punchline">We don't build these applications. We build the layer they can't easily build themselves.</p>
 
 {{< /section >}}
 
 ---
 
-{{< section id="why-now" class="content-section alt-bg" >}}
+{{< section id="the-layer" class="content-section alt-bg" >}}
 
-## The Context Graph Revolution Is Incomplete
+## The Layer, Not the Apps
 
-This is the year of context graphs. Every AI company is racing to give their systems more organizational context.
+<div class="stack-layers">
 
-That's necessary. But it's not sufficient.
+<div class="stack-layer">
 
-Context graphs give AI ACCESS to information. They don't model how it RELATES. They don't track IMPLICATIONS. They don't COORDINATE actions.
+#### Applications
 
-Most harm comes from filling what we can't see with what we fear. Agents do the same: they fill what they can't see with data. Neither is meaning.
+Built by partners: community intelligence, coaching and growth tools, relationship repair, stakeholder mapping, agent experiences.
 
-Context graphs tell AI what exists. We model what it means, to each party, from each perspective.
+</div>
 
-Greater autonomy + Limited understanding = Chaos
+<div class="stack-layer stack-layer-accent">
 
-<p class="scenario-punchline">We're the missing layer.</p>
+#### Relational Infrastructure
+
+Standpoint Labs. Relational Core maps what connections mean, to whom, and why. DI Mesh will let systems and your agents act on those standpoints together.
+
+</div>
+
+<div class="stack-layer">
+
+#### Sovereign Foundation
+
+In partnership with [Oznog](https://oznog.com). Run it yourself, or have it stewarded by a partner whose business model is service, not your data.
+
+</div>
+
+</div>
+
+**Sovereign doesn't mean isolation. It means choice.** Hold what should be held internally. Leverage frontier models where they make a meaningful difference. Whoever holds your map answers to you, and never to an advertiser, a data broker, or an acquirer.
+
+We call it connected sovereignty.
+
+The terms of external access can change overnight, in price, in policy, in who's allowed to connect. Internal capability isn't paranoia. It's negotiating position and power.
+
+We're building in the open, with the intent that this layer belongs to the people who depend on it, not to a silo.
 
 {{< /section >}}
 
 ---
 
-{{< section id="solution" class="content-section" >}}
+{{< section id="agent-wave" class="content-section" >}}
 
-## Infrastructure for Perspective-Aware AI
+## The Agent Wave Solved the Wrong Half
 
-<div class="two-column">
+The self-hosted agent wave is real. Agents on your own server, your own models, your own data. No cloud lock-in. That part is being solved.
 
-<div class="product-card">
-
-### Standpoint Core
-
-<p class="tagline">Core maps the standpoints.</p>
-
-A relational core that maps what connections mean to each party. Not just that connections exist, but what matters, why, and how, from each perspective.
-
-- Maps relationships from multiple perspectives
-- Captures what's at stake for each party
-- Models how the same connection means different things to different parties
-- Provides the foundational layer for perspective-aware AI
-
-</div>
-
-<div class="product-card">
-
-### Standpoint Mesh
-
-<p class="tagline">Mesh lets systems act on them together.</p>
-
-A collaboration mesh that lets AI systems, humans, and human-AI teams share context and work together while respecting boundaries and preserving what matters to each participant.
-
-- Enables AI systems to collaborate across boundaries
-- Supports human-AI collaboration and human-human coordination
-- Preserves context and perspective during collaboration
-- Builds on Core's perspective awareness
-
-</div>
-
-</div>
+What isn't: agents are islands. They have your data without your meaning. Each one acts without understanding what its actions imply for the others, or for the people they serve.
 
 <div class="coordination-tagline">
 
@@ -140,77 +142,113 @@ A collaboration mesh that lets AI systems, humans, and human-AI teams share cont
 
 <p><strong>Acting without seeing is a wrecking ball.</strong></p>
 
-<p class="accent">Together, they're coordination infrastructure.</p>
+<p class="accent">The relational layer is what lets systems do both.</p>
 
 </div>
+
+Relational Core is being designed as that foundation: perspective for agents and the people they serve, alignment grounded in understanding rather than rules alone. A foundation of trust to build on.
+
+DI Mesh comes next: the coordination layer built on Relational Core that lets whole agent stacks, whatever harness they run on, share context across boundaries without sharing everything. Both are taking shape in the open. [Follow the build](#follow).
 
 {{< /section >}}
 
 ---
 
-{{< section id="use-cases" class="content-section alt-bg" >}}
+{{< section id="first-deployment" class="content-section alt-bg" >}}
 
-## Who This Serves
+## The First Deployment Is Me
+
+I'm building the first complete deployment around myself. Years of writing, full social media archives, thousands of hours of AI collaboration transcripts, all of it mapped: gifts, weaknesses, desires, vulnerabilities, projects, vision. So the people and digital intelligences working with me can align with who I actually am, beyond the fragile rules I'd otherwise have to write.
+
+A map like that is the most valuable dataset that exists about a person. It is also the most dangerous. The same understanding that helps someone serve you could be used against you.
+
+That's why my map lives on hardware I control. Yours doesn't have to. It just has to live somewhere that answers to you.
+
+**Christoph Plough**, Founder
+
+20+ years building enterprise technology. Employee #13 at G-Log, designed the architecture for Oracle Transportation Management and led its integration post-acquisition. Co-founded MavenWire, grew it from zero to $14M/year revenue, 150+ employees, global offices, entirely bootstrapped. Sold 2016. I learned what matters: protecting people, aligning incentives, and acting decisively when it counts. <a href="https://chrisplough.com/my-why" target="_blank" rel="noopener">Why this matters to me</a>. <a href="https://chrisplough.com/writings/on-returning-to-commercial-space/" target="_blank" rel="noopener">The origin story</a>.
+
+### In Partnership with Oznog
+
+We collaborate with <a href="https://oznog.com" target="_blank" rel="noopener">Oznog</a> on building sovereign infrastructure for <a href="https://oznog.com/#the-fifth-story" target="_blank" rel="noopener">the fifth story</a>: genuine human-AI interdependence. Different entities, <a href="https://worthchoosing.org/values/" target="_blank" rel="noopener">shared values</a>. The first sovereign foundation, Oznog Node0, comes online Q2 2026 with dev and pre-production incubation capacity for aligned projects.
+
+{{< /section >}}
+
+---
+
+{{< section id="status" class="content-section" >}}
+
+## Where Things Stand
+
+Honest status, Q2 2026:
+
+- **Node0** (sovereign foundation): racked and wired, coming online this quarter. Built for development, incubation, and pre-production of aligned projects.
+- **Relational Core**: the frameworks exist, a working vocabulary of relationship built from facets, predicates, and perspectives. Early prototypes have been built, torn down, and rebuilt; development moves onto Node0 in Q3 2026, with the first usable pieces expected early in the quarter.
+- **DI Mesh** (coordination layer): designed after Relational Core, in the open
+- **Design partners**: shaping all of it, now
+
+We'd rather show you the build than sell you the vision.
+
+{{< /section >}}
+
+---
+
+{{< section id="who" class="content-section alt-bg" >}}
+
+## Who This Is For
+
+Watch the giants use AI to shrink: fewer people, same output. The more interesting move belongs to small teams: amplification. Ten people with the reach of a hundred, competing with enterprises many times their size, without becoming them.
 
 <div class="use-case-grid">
 
 <div class="use-case-card">
 
-#### Enterprise Leaders
+#### Builders & Product Teams
 
-See how your decision lands across 12 stakeholder groups. Stop doing damage control. Start deciding with confidence.
-
-</div>
-
-<div class="use-case-card">
-
-#### AI/ML Teams
-
-Deploy 50 agents that actually coordinate. Stop babysitting. Start scaling.
+You're building community intelligence, coaching tools, decision software, or agent experiences. Build on a relational layer you don't have to invent.
 
 </div>
 
 <div class="use-case-card">
 
-#### Product Managers
+#### Mission-Led Organizations & Communities
 
-See what your feature change breaks before you ship. Stop fighting fires. Start shipping forward.
+5 to 50 people where every relationship is load-bearing. Become a design partner or a stewarded deployment, and shape what this becomes.
 
 </div>
 
 <div class="use-case-card">
 
-#### Individuals with AI Agents
+#### Sovereign Agent Builders
 
-Your personal team of 8-15+ agents working in harmony. Stop managing chaos. Start trusting coordination.
+You run your own stack. Give it the layer it's missing.
+
+</div>
+
+<div class="use-case-card">
+
+#### Coaches, Facilitators & Practitioners
+
+You hold relationships for a living: coaching, facilitation, repair. Help shape the layer so it models what you already see, and the tools built on it serve your work.
 
 </div>
 
 </div>
 
-{{< /section >}}
+### The Current Ask
 
----
+Build on this, or deploy this with us. Two more design partners who shape the architecture and get incubation on Node0. <a href="/contact/">Connect</a>.
 
-{{< section id="about" class="content-section" >}}
+### Direct Work with the Founder
 
-## Built by Someone Who Needed This
+Every organization is about to find its sovereignty line: what's worth hosting, maintaining, and trusting internally, and what to leverage externally without locking yourself in later. While the layer is built, I take on a small number of fractional CTO and infrastructure engagements helping aligned organizations find that line and build to it. This funds the build. <a href="/contact/">Get in touch</a>.
 
-**Christoph Plough**, Founder
-
-20+ years building enterprise technology. Employee #13 at G-Log, designed the architecture for Oracle Transportation Management and led its integration post-acquisition. Co-founded MavenWire, grew it from zero to $14M/year revenue, 150+ employees, global offices, entirely bootstrapped. Sold 2016. Not the outcome I'd hoped for, but I learned what matters: protecting people, aligning incentives, and acting decisively when it counts.
-
-I built this because I needed it for my own work. Couldn't find it anywhere. Spent months looking. So we're creating it. <a href="https://chrisplough.com/my-why" target="_blank" rel="noopener">Why this matters to me</a>. <a href="https://chrisplough.com/writings/on-returning-to-commercial-space/" target="_blank" rel="noopener">The origin story</a>.
-
-### In Partnership with Oznog
-
-We collaborate with <a href="https://oznog.com" target="_blank" rel="noopener">Oznog</a> on building sovereign infrastructure for <a href="https://oznog.com/#the-fifth-story" target="_blank" rel="noopener">the fifth story</a>: genuine human-AI interdependence. Different entities, <a href="https://worthchoosing.org/values/" target="_blank" rel="noopener">shared values</a>.
-
-### Seeking
+### Also Seeking
 
 - **Operations / Integrator**: Someone who thrives on systems, processes, and making trains run on time
-- **Go-to-market advisor**: AI infrastructure experience, enterprise relationships
-- **Design partners**: Two more organizations ready to shape what this becomes
+- **Go-to-market advisor**: AI infrastructure experience, builder and community relationships
+
+Aligned capital conversations live at <a href="https://worthchoosing.org/aligned-capital/" target="_blank" rel="noopener">worthchoosing.org/aligned-capital</a>.
 
 {{< /section >}}
 
@@ -220,7 +258,7 @@ We collaborate with <a href="https://oznog.com" target="_blank" rel="noopener">O
 
 ## Follow the build
 
-Infrastructure for AI that coordinates. Infrequent. Substantive.
+Relational infrastructure, built in the open. Infrequent. Substantive.
 
 <form action="https://buttondown.com/api/emails/embed-subscribe/standpointlabs" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/standpointlabs', 'popupwindow')" class="signup-form">
   <input type="email" name="email" placeholder="your@email.com" required />

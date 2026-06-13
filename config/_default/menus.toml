@@ -1,22 +1,22 @@
 # Main navigation
 [[main]]
-  name = "Problem"
-  url = "/#the-problem"
+  name = "Why Standpoint"
+  url = "/#why-standpoint"
   weight = 10
 
 [[main]]
-  name = "Solution"
-  url = "/#solution"
+  name = "The Layer"
+  url = "/#the-layer"
   weight = 20
 
 [[main]]
-  name = "Use Cases"
-  url = "/#use-cases"
+  name = "Who It's For"
+  url = "/#who"
   weight = 30
 
 [[main]]
   name = "About"
-  url = "/#about"
+  url = "/#first-deployment"
   weight = 40
 
 [[main]]
@@ -31,13 +31,13 @@
 
 # Footer navigation
 [[footer]]
-  name = "Problem"
-  url = "/#the-problem"
+  name = "Why Standpoint"
+  url = "/#why-standpoint"
   weight = 10
 
 [[footer]]
-  name = "Solution"
-  url = "/#solution"
+  name = "The Layer"
+  url = "/#the-layer"
   weight = 20
 
 [[footer]]

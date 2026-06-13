@@ -54,9 +54,9 @@ An app surfaces the right introduction at the right moment, because the layer be
 
 <div class="use-case-card">
 
-#### A decision that doesn't cascade blind
+#### A role decision that sees the whole person
 
-In a 14-person company, everyone is load-bearing. A planning tool shows what one resignation means to each client, teammate, and project before the dominoes fall, not after.
+Who to hire, who to promote, who to pair with whom. A tool that knows what each person actually values and where they're trying to go, so you place people where they'll thrive and catch the mismatch before it costs everyone.
 
 </div>
 

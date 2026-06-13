@@ -187,6 +187,10 @@ Honest status, Q2 2026:
 - **DI Mesh** (coordination layer): designed after Relational Core, in the open
 - **Design partners**: shaping all of it, now
 
+<img class="status-photo" src="/images/node0-racks.jpg" alt="Node0: two 42U racks holding 51 machines, racked and wired in a basement in Eden, Utah" />
+
+<p class="status-photo-caption">Node0, June 2026. Racked, wired, and nearly awake.</p>
+
 We'd rather show you the build than sell you the vision.
 
 {{< /section >}}

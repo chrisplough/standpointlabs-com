@@ -1931,3 +1931,19 @@ article:has(.privacy-section) > section.prose {
 .stack-layer p {
   margin: 0;
 }
+
+/* Status section photo (Node0) - added 20260613 */
+.status-photo {
+  display: block;
+  max-width: 540px;
+  width: 100%;
+  margin: 2rem auto 0.5rem;
+  border-radius: 6px;
+}
+
+.status-photo-caption {
+  text-align: center;
+  font-size: 0.875rem;
+  color: rgba(45, 90, 90, 0.75);
+  margin: 0 0 1rem;
+}

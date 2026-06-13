@@ -132,6 +132,8 @@ We're building in the open, with the intent that this layer belongs to the peopl
 
 ## The Agent Wave Solved the Wrong Half
 
+Everybody's building a brain for AI. We're building the heart: the part that understands what relationships mean.
+
 The self-hosted agent wave is real. Agents on your own server, your own models, your own data. No cloud lock-in. That part is being solved.
 
 What isn't: agents are islands. They have your data without your meaning. Each one acts without understanding what its actions imply for the others, or for the people they serve.

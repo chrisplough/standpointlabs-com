@@ -254,7 +254,7 @@ Every organization is about to find its sovereignty line: what's worth hosting, 
 - **Operations / Integrator**: Someone who thrives on systems, processes, and making trains run on time
 - **Go-to-market advisor**: AI infrastructure experience, builder and community relationships
 
-**Aligned capital:** Standpoint Labs is the investable arm - a focused build, structured with a perpetual license back to the mission so alignment survives any outcome. If you want to back the relational layer, <a href="/contact/">start the conversation</a>. The values filter lives at <a href="https://worthchoosing.org/aligned-capital/" target="_blank" rel="noopener">worthchoosing.org/aligned-capital</a>.
+**Aligned capital:** Standpoint Labs is the investable arm - a focused build, structured with a perpetual license back to the mission so alignment survives any outcome. If you want to back the relational layer, <a href="/contact/">start the conversation</a>.
 
 {{< /section >}}
 

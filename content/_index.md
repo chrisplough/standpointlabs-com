@@ -172,7 +172,7 @@ That's why my map lives on hardware I control. Yours doesn't have to. It just ha
 
 ### In Partnership with Oznog
 
-We collaborate with <a href="https://oznog.com" target="_blank" rel="noopener">Oznog</a> on building sovereign infrastructure for <a href="https://oznog.com/#the-fifth-story" target="_blank" rel="noopener">the fifth story</a>: genuine human-AI interdependence. Different entities, <a href="https://worthchoosing.org/values/" target="_blank" rel="noopener">shared values</a>. The first sovereign foundation, Oznog Node0, comes online Q2 2026 with dev and pre-production incubation capacity for aligned projects.
+We collaborate with <a href="https://oznog.com" target="_blank" rel="noopener">Oznog</a> on building sovereign infrastructure for <a href="https://oznog.com/#the-fifth-story" target="_blank" rel="noopener">the fifth story</a>: genuine human-AI interdependence. Different entities, <a href="https://worthchoosing.org/values/" target="_blank" rel="noopener">shared values</a>. The first sovereign foundation, Oznog Node0, comes online Q3 2026 with dev and pre-production incubation capacity for aligned projects.
 
 {{< /section >}}
 
@@ -182,7 +182,7 @@ We collaborate with <a href="https://oznog.com" target="_blank" rel="noopener">O
 
 ## Where Things Stand
 
-Honest status, Q2 2026:
+Honest status, Q3 2026:
 
 - **Node0** (sovereign foundation): racked and wired, coming online this quarter. Built for development, incubation, and pre-production of aligned projects.
 - **Relational Core**: the frameworks exist, a working vocabulary of relationship built from facets, predicates, and perspectives. Early prototypes have been built, torn down, and rebuilt; development moves onto Node0 in Q3 2026, with the first usable pieces expected early in the quarter.
@@ -247,14 +247,14 @@ Build on this, or deploy this with us. Two more design partners who shape the ar
 
 ### Direct Work with the Founder
 
-Every organization is about to find its sovereignty line: what's worth hosting, maintaining, and trusting internally, and what to leverage externally without locking yourself in later. While the layer is built, I take on a small number of fractional CTO and infrastructure engagements helping aligned organizations find that line and build to it. This funds the build. <a href="/contact/">Get in touch</a>.
+Every organization is about to find its sovereignty line: what's worth hosting, maintaining, and trusting internally, and what to leverage externally without locking yourself in later. While the layer is built, I take on a small number of fractional CTO engagements helping aligned organizations find that line and build to it. (Infrastructure engagements live with <a href="https://oznog.com" target="_blank" rel="noopener">Oznog</a>.) This funds the build. <a href="/contact/">Get in touch</a>. For the judgment work on its own - what to own, what to rent, and what to ignore - start at <a href="https://chrisplough.com/ai/">chrisplough.com/ai</a>.
 
 ### Also Seeking
 
 - **Operations / Integrator**: Someone who thrives on systems, processes, and making trains run on time
 - **Go-to-market advisor**: AI infrastructure experience, builder and community relationships
 
-Aligned capital conversations live at <a href="https://worthchoosing.org/aligned-capital/" target="_blank" rel="noopener">worthchoosing.org/aligned-capital</a>.
+**Aligned capital:** Standpoint Labs is the investable arm - a focused build, structured with a perpetual license back to the mission so alignment survives any outcome. If you want to back the relational layer, <a href="/contact/">start the conversation</a>.
 
 {{< /section >}}
 

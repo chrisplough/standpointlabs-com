@@ -247,7 +247,7 @@ Build on this, or deploy this with us. Two more design partners who shape the ar
 
 ### Direct Work with the Founder
 
-Every organization is about to find its sovereignty line: what's worth hosting, maintaining, and trusting internally, and what to leverage externally without locking yourself in later. While the layer is built, I take on a small number of fractional CTO and infrastructure engagements helping aligned organizations find that line and build to it. This funds the build. <a href="/contact/">Get in touch</a>. For the judgment work on its own - what to own, what to rent, and what to ignore - start at <a href="https://chrisplough.com/ai/">chrisplough.com/ai</a>.
+Every organization is about to find its sovereignty line: what's worth hosting, maintaining, and trusting internally, and what to leverage externally without locking yourself in later. While the layer is built, I take on a small number of fractional CTO engagements helping aligned organizations find that line and build to it. (Infrastructure engagements live with <a href="https://oznog.com" target="_blank" rel="noopener">Oznog</a>.) This funds the build. <a href="/contact/">Get in touch</a>. For the judgment work on its own - what to own, what to rent, and what to ignore - start at <a href="https://chrisplough.com/ai/">chrisplough.com/ai</a>.
 
 ### Also Seeking
 

@@ -219,7 +219,7 @@ You're building community intelligence, coaching tools, decision software, or ag
 
 #### Mission-Led Organizations & Communities
 
-5 to 50 people at the core - from solo founders to teams of a couple hundred - where every relationship is load-bearing. Become a design partner or a stewarded deployment, and shape what this becomes.
+5 to 50 people where every relationship is load-bearing. Become a design partner or a stewarded deployment, and shape what this becomes.
 
 </div>
 

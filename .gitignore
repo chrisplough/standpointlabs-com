@@ -481,3 +481,10 @@ _site/
 # =============================================================================
 
 # End of template - customize above for your specific project
+
+# macOS finder metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes

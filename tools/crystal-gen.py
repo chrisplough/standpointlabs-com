@@ -49,6 +49,7 @@ def build(AX,AY,AZ,cx,cy,s,seed,nfl=80,lit_rank=0,fleck=True):
     litpts=[P[i] for i in faces[lit][1]]
     return "".join(parts), (sum(p[0] for p in litpts)/5, sum(p[1] for p in litpts)/5)
 if __name__=="__main__":
+    # 20260921: the site uses 0.6 0.0 0.0 1, matching the hero photograph (a top face tilted toward the viewer, the front face as the standpoint)
     AX,AY,AZ,rank=[float(x) for x in sys.argv[1:4]]+[int(sys.argv[4])]
     main,(cx,cy)=build(AX,AY,AZ,300,272,150,7,80,rank)
     mini,_=build(AX+0.4,AY-0.5,0.3,700,150,64,11,40,0)

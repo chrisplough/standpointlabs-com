@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{/* the updates list, restyled 20260921: title, date, reading time, and the description each post carries */}}
+<article class="max-w-full">
+  <header class="max-w-prose">
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+    {{ with .Description }}<p class="spl2-list-lede">{{ . }}</p>{{ end }}
+  </header>
+  <section class="prose max-w-prose spl2-updates-intro">{{ .Content }}</section>
+  <ul class="spl2-updates">
+    {{ range .Pages.ByDate.Reverse }}
+    <li>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "20060102" }}</time>
+      <div>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        <span class="spl2-rt">{{ .ReadingTime }} min</span>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+</article>
+{{ end }}

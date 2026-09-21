@@ -4,6 +4,8 @@ description: "Get in touch with Standpoint Labs"
 layout: "simple"
 ---
 
+Two design partners who shape the architecture and get incubation on Node0; a small number of fractional CTO engagements while the layer is built; aligned capital for the investable arm; or a question about any of it. Say which, and what you are facing. Replies come from Christoph.
+
 <div class="contact-section">
 
 <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you/">
@@ -30,10 +32,11 @@ layout: "simple"
   <div class="form-group">
     <label for="interest">Interest</label>
     <select id="interest" name="interest">
-      <option value="design-partner">Design partner inquiry</option>
-      <option value="investment">Investment interest</option>
-      <option value="partnership">Partnership opportunity</option>
-      <option value="general">General inquiry</option>
+      <option value="design-partner">Design partner: build on the layer, or deploy it with you</option>
+      <option value="fractional-cto">Fractional CTO engagement</option>
+      <option value="investment">Aligned capital</option>
+      <option value="agents">I run my own agents and want the layer</option>
+      <option value="general">Something else</option>
     </select>
   </div>
 

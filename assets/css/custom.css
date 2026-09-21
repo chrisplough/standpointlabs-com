@@ -2058,3 +2058,20 @@ article:has(.privacy-section) > section.prose {
 /* the pentagon mark before the wordmark (20260921) */
 header a.wordmark { display: inline-flex !important; align-items: center; }
 header a.wordmark .wordmark-mark { flex-shrink: 0; width: 22px; height: 22px; margin-right: .55rem; }
+
+/* the updates list (20260921): the description each post carries, beside its date */
+.spl2-list-lede { color: var(--standpoint-text-secondary); margin: .4rem 0 0; }
+.spl2-updates-intro small { color: var(--standpoint-text-muted); }
+.spl2-updates { list-style: none; padding: 0; margin: 1.5rem 0 0; max-width: 50rem; }
+.spl2-updates li { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 1rem; padding: 1rem 0; border-top: 1px solid var(--standpoint-border); }
+.spl2-updates time { font-family: 'JetBrains Mono', monospace; font-size: .85rem; color: var(--standpoint-text-muted); padding-top: .25rem; }
+.spl2-updates a { font-weight: 600; color: var(--standpoint-text-primary); text-decoration: none; font-size: 1.1rem; }
+.spl2-updates a:hover { color: #2D5A5A; text-decoration: underline; text-underline-offset: .2em; }
+.spl2-updates a[href^="http"]::after { content: none !important; }
+.spl2-updates p { margin: .3rem 0 0; color: var(--standpoint-text-secondary); }
+.spl2-updates .spl2-rt { display: block; margin-top: .3rem; font-size: .82rem; color: var(--standpoint-text-muted); }
+@media (max-width: 640px) { .spl2-updates li { grid-template-columns: 1fr; gap: .2rem; } }
+/* the local test build uses a 127.0.0.1 base URL; internal links must not get the outbound arrow there either */
+.prose a[href*="127.0.0.1"]::after, article a[href*="127.0.0.1"]::after { content: none !important; }
+.spl2-updates li::before, .spl2-updates li::marker { content: none !important; display: none; }
+.spl2-updates li { padding-left: 0; }

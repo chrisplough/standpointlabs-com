@@ -1,0 +1,167 @@
+{{ define "main" }}
+{{/* standpointlabs.com home, rebuilt 20260921 to the approved mock. The crystal is the visual system; the explainer is the centre of the page. */}}
+<div class="spl2">
+
+  <section class="spl2-hero">
+    <div class="spl2-hero-grid">
+      <div class="spl2-copy">
+        <h1>Every relationship looks different depending on where you stand.</h1>
+        <p class="spl2-sub">Your tools pull you apart. Technology should work in harmony with you.</p>
+        <p class="spl2-desc">The relational layer for connected sovereignty.</p>
+        <div class="spl2-ctas"><a class="spl2-btn spl2-primary" href="#what">See how it works</a><a class="spl2-btn" href="{{ "contact/" | relLangURL }}">Connect</a></div>
+      </div>
+      <figure class="spl2-hero-figure">
+        {{ partial "spl2-picture.html" (dict "src" "images/crystal.jpg" "alt" "A clear twelve-sided crystal with copper flecks inside, held between finger and thumb in sunlight" "sizes" "(max-width: 860px) 100vw, 560px" "eager" true) }}
+        <figcaption>The object we hold up when we explain it.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="what" class="spl2-explain">
+    <div class="spl2-intro">
+      <h2>What Relational Core is</h2>
+      <p class="spl2-def">Technology that lets humans and digital intelligence understand each person, and each group of people, deeply enough that how it acts, what it sees and how it helps are rooted in who we are and who we get to be. Real relationship to build on. And complete privacy, so that it can never be used against you or the people you love.</p>
+      <p>Hold a faceted crystal up to the light. Twelve faces, and every one is a window onto the same interior. Turn it, and the same copper flecks rearrange. Nothing inside changed; where you stand did. Relational Core is that, built as software: a way of modelling people, groups and ideas so that what a connection <em>means</em> is kept for each party that has a stake in it.</p>
+    </div>
+    <div class="spl2-scrolly">
+      <div class="spl2-steps">
+        <div class="spl2-step is-active" data-step="1">
+          <span class="spl2-k">The thing</span>
+          <h3>A person, a team or an idea is modelled as a faceted solid</h3>
+          <p>Its interior is what it seeks, what it offers, what it protects: the copper inside the crystal. That interior is one thing. It does not change when someone new looks at it.</p>
+        </div>
+        <div class="spl2-step" data-step="2">
+          <span class="spl2-k">The standpoint</span>
+          <h3>Each face is a standpoint: what this connection means from there</h3>
+          <p>A new hire is relief to the founder, uncertainty to a teammate, and a whole new life to the person arriving. Same interior, three faces. Most systems keep one of them and call it the truth. Relational Core keeps all three and knows which one you are asking from.</p>
+        </div>
+        <div class="spl2-step" data-step="3">
+          <span class="spl2-k">The recursion</span>
+          <h3>Each face is itself a solid</h3>
+          <p>The teammate who is one face of the team is a whole crystal of their own, with their own faces, their own copper. The model goes all the way down, which is why it can say what an action means to a group and to each person in it, without flattening either.</p>
+        </div>
+      </div>
+      <div class="spl2-figure" data-step="1">{{ partial "crystal.svg" . }}</div>
+    </div>
+    <dl class="spl2-vocab">
+      <div><dt>Facets</dt><dd>The parties and the things they are: a person, a team, a project, an idea. Each is modelled whole, and each can be a face of another.</dd></div>
+      <div><dt>Predicates</dt><dd>What is true between facets: seeks, offers, protects, fears, owes, carries. The copper inside, made explicit.</dd></div>
+      <div><dt>Perspectives</dt><dd>What a predicate means when you ask from a particular face. The same fact, rendered for the founder, the teammate, the person arriving.</dd></div>
+    </dl>
+  </section>
+
+  <section id="does" class="spl2-band">
+    <div class="spl2-prose">
+      <h2>One example, worked through</h2>
+      <p>One question of the many the layer can answer, chosen because it is small enough to follow end to end. An engineer joins a five-person company. Ask Relational Core what that means, and it answers from each face, because it holds what each person seeks, offers and protects.</p>
+    </div>
+    <div class="spl2-tablewrap"><table class="spl2-ledger">
+      <thead><tr><th scope="col"></th><th scope="col">The founder</th><th scope="col">A teammate</th><th scope="col">The person arriving</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">seeks</th><td>Time back. Someone to hand the backlog to.</td><td>To keep owning the part of the system they built.</td><td>A place to do the best work of their career.</td></tr>
+        <tr><th scope="row">offers</th><td>Trust, quickly, if it is earned in the first month.</td><td>Context nobody wrote down.</td><td>Depth in exactly the area the team is weakest.</td></tr>
+        <tr><th scope="row">protects</th><td>Runway. Every hire is months of it.</td><td>Their standing. They were the expert until today.</td><td>The reason they left the last place.</td></tr>
+        <tr class="spl2-meaning"><th scope="row">the arrival means</th><td><em>Relief.</em> The backlog has an owner.</td><td><em>Uncertainty.</em> Overlap with what they hold.</td><td><em>A new life.</em> Everything is at stake in week one.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="spl2-prose spl2-after">Three true answers to one question. An application built on the layer can act on any of them: introduce the two engineers with the overlap named rather than hidden, remind the founder what week one protects, or tell an agent what not to do on the new person's behalf. The example is illustrative; every value is invented.</p>
+  </section>
+
+  <section id="built" class="spl2-built">
+    <div class="spl2-prose">
+      <h2>What gets built on this</h2>
+      <p>Relational Core is infrastructure. Partners build the applications, and every one of them is the same layer asked from a different face. Learn the pattern once: the application asks, the layer answers per standpoint, the application acts.</p>
+    </div>
+    <div class="spl2-uses">
+      <div class="spl2-use"><h3>Communities</h3><p class="spl2-q">"Who in this room should meet, and why?"</p><p class="spl2-r">the uncommon commonality: the thing two members both protect or both seek that neither has said out loud.</p><p class="spl2-e">Introductions with the reason attached, in a mastermind, a founders' group, a cohort. Genuine opportunity instead of networking noise.</p></div>
+      <div class="spl2-use"><h3>Coaches, facilitators, practitioners</h3><p class="spl2-q">"What does this person protect that they have not said?"</p><p class="spl2-r">the standpoint they are speaking from, and the one they are avoiding.</p><p class="spl2-e">A conversation that starts from understanding rather than guesswork, and a practitioner who can keep helping as the person changes.</p></div>
+      <div class="spl2-use"><h3>Role decisions</h3><p class="spl2-q">"Where will this person thrive, and with whom?"</p><p class="spl2-r">what they value and where they are trying to go, not only what they can do.</p><p class="spl2-e">Hiring, promotion and pairing that place people where they will thrive and catch the mismatch before it costs a year.</p></div>
+      <div class="spl2-use"><h3>The agents you already run</h3><p class="spl2-q">"What does this action mean to the people it touches?"</p><p class="spl2-r">the answer, per person, before the agent acts.</p><p class="spl2-e">An agent that stays in alignment because it understands, not because a rule told it. Bring the agents you already run: Relational Core and DI Mesh do not care whose intelligence is underneath or which harness it runs in, Claude, ChatGPT, Grok, Hermes, or local models running on your own hardware. The layer sits beside them; nothing you have built has to change.</p></div>
+    </div>
+    <p class="spl2-fence">We do not build these applications. We build the layer they cannot easily build themselves.</p>
+  </section>
+
+  <section id="why" class="spl2-band">
+    <div class="spl2-prose">
+      <h2>Why it is necessary</h2>
+      <p>Everybody is building a brain for AI. The part that understands what relationships mean is missing, and the gap shows in three places.</p>
+    </div>
+    <div class="spl2-why">
+      <div><h3>Most systems hold one view and call it truth</h3><p>They give AI access to information without modelling what it means, to whom, and why. The result is confident advice from nowhere in particular.</p></div>
+      <div><h3>Agents have your data without your meaning</h3><p>The self-hosted agent wave is real: your server, your models, your data. But agents are islands. Each acts without understanding what its actions imply for the others, or for the people they serve. Seeing without acting is a museum. Acting without seeing is a wrecking ball.</p></div>
+      <div><h3>The map is the most valuable dataset about a person, and the most dangerous</h3><p>The same understanding that helps someone serve you could be used against you. So the map has to live somewhere that answers to you. That is why this layer is built on sovereign infrastructure, and why the first deployment runs on hardware its founder controls: <a href="https://oznog.com/node0">Node0, documented</a>.</p></div>
+    </div>
+  </section>
+
+  <section id="layer">
+    <div class="spl2-prose">
+      <h2>The layer, not the apps</h2>
+      <p>Sovereign does not mean isolation. It means choice: hold what should be held internally, leverage frontier models where they make a meaningful difference, and let whoever holds your map answer to you. We call it connected sovereignty.</p>
+    </div>
+    <div class="spl2-bands">
+      <div class="spl2-bandrow"><h3>Applications</h3><p>Built by partners: community intelligence, coaching and growth tools, relationship repair, stakeholder mapping, agent experiences.</p></div>
+      <div class="spl2-bandrow spl2-accent"><h3>Relational infrastructure</h3><p>Standpoint Labs. Relational Core maps what connections mean, to whom, and why. DI Mesh will let systems and your agents act on those standpoints together.</p></div>
+      <div class="spl2-bandrow"><h3>Sovereign foundation</h3><p>In partnership with <a href="https://oznog.com">Oznog</a>. Run it yourself, or have it stewarded by a partner whose business model is service, not your data.</p></div>
+    </div>
+  </section>
+
+  <section id="who" class="spl2-band spl2-who">
+    <div class="spl2-prose">
+      <h2>Who this is for</h2>
+      <p>Watch the giants use AI to shrink: fewer people, same output. The more interesting move belongs to small teams: ten people with the reach of a hundred, without becoming the enterprise they compete with.</p>
+    </div>
+    <ul class="spl2-list">
+      <li><strong>Builders and product teams</strong> making community intelligence, coaching tools, decision software or agent experiences. Build on a relational layer you do not have to invent.</li>
+      <li><strong>Mission-led organisations of 5 to 50</strong>, where every relationship is load-bearing. Become a design partner or a stewarded deployment.</li>
+      <li><strong>Sovereign agent builders.</strong> You run your own stack. Give it the layer it is missing.</li>
+      <li><strong>Coaches, facilitators and practitioners.</strong> You hold relationships for a living. Help shape the layer so it models what you already see.</li>
+    </ul>
+    <div class="spl2-ask">
+      <div><h3>The current ask</h3><p>Build on this, or deploy this with us. Two more design partners who shape the architecture and get incubation on Node0.</p></div>
+      <a class="spl2-btn spl2-primary" href="{{ "contact/" | relLangURL }}">Connect</a>
+    </div>
+    <p class="spl2-prose spl2-after"><strong>Direct work with the founder.</strong> Every organisation is about to find its sovereignty line: what is worth hosting and trusting internally, and what to leverage externally without locking yourself in. A small number of fractional CTO engagements, while the layer is built. <strong>Aligned capital.</strong> Standpoint Labs is the investable arm, structured with a perpetual licence back to the mission so alignment survives any outcome. <a href="{{ "contact/" | relLangURL }}">Start the conversation</a>.</p>
+  </section>
+
+  <section id="built-so-far" class="spl2-status">
+    <div class="spl2-prose">
+      <h2>What has been built so far</h2>
+      <p>September 2026. We would rather show you the build than sell you the vision, so here is what one person and a set of agents have put in place.</p>
+    </div>
+    <dl class="spl2-statuslist">
+      <dt>Node0</dt><dd>Sovereign infrastructure the layer runs on: two rooms, four racks, about fifty hosts, local AI models behind one gateway, in rooms the founder controls. Online since June 2026, production-ready since September, captured and documented on 20260920. The starter version, the site as it stands and the lessons are at <a href="https://oznog.com/node0">oznog.com/node0</a>.</dd>
+      <dt>Relational Core</dt><dd>The vocabulary exists (facets, predicates, perspectives). Prototypes built, torn down and rebuilt; development runs on Node0 now.</dd>
+      <dt>DI Mesh</dt><dd>The coordination layer, designed after Relational Core, in the open.</dd>
+      <dt>Design partners</dt><dd>Shaping all of it, now.</dd>
+    </dl>
+  </section>
+
+  <section id="founder" class="spl2-band spl2-founder">
+    <div class="spl2-prose">
+      <h2>The first deployment is me</h2>
+      <p>I am building the first complete deployment around myself: years of writing, full social archives, thousands of hours of AI collaboration transcripts, all of it mapped. Gifts, weaknesses, desires, vulnerabilities, projects, vision. So the people and digital intelligences working with me can align with who I actually am, beyond the fragile rules I would otherwise have to write. A map like that is the most valuable dataset that exists about a person, and the most dangerous. Mine lives on hardware I control. Yours does not have to; it just has to live somewhere that answers to you.</p>
+      <p class="spl2-bio"><strong>Christoph Plough</strong> has spent twenty years building technology and a decade learning what people carry. Seven years at G-Log on the architecture that became Oracle Transportation Management; co-founder of MavenWire in 2006, which he led for ten years into a global, eight-figure company before selling in 2016. Then a decade in consciousness and healing work, facilitating for combat veterans and people with complex trauma, and co-founding AdventureX. He returned to technology in 2024 with one question, what makes us worth choosing, and built Node0 to work on it on hardware that answers to no one else. He has lived at every intersection this layer models: engineer, founder, facilitator, and the person holding someone in their hardest place. That is why Relational Core is built around what people protect, not only what they say. <a href="https://chrisplough.com/about/">The longer version is at chrisplough.com</a>.</p>
+    </div>
+  </section>
+
+  <section id="follow" class="spl2-follow">
+    <div class="spl2-prose">
+      <h2>Follow the build</h2>
+      <p>Both layers are taking shape in the open. <a href="{{ "updates/" | relLangURL }}">The updates</a> carry the decisions as they are made; <a href="https://chrisplough.substack.com">the weekly writing</a> carries the thinking behind them.</p>
+    </div>
+  </section>
+</div>
+<script>
+(function(){
+  var fig=document.querySelector('.spl2-figure'),steps=[].slice.call(document.querySelectorAll('.spl2-step'));
+  if(!fig||!steps.length)return;
+  if(window.matchMedia('(max-width:860px)').matches){fig.setAttribute('data-step','3');steps.forEach(function(s){s.classList.add('is-active')});return;}
+  var cur=null,ticking=false;
+  function pick(){ticking=false;var line=window.innerHeight*0.42,best=null,bd=1e9;
+    steps.forEach(function(st){var r=st.getBoundingClientRect();var c=r.top+Math.min(r.height,240)/2;var d=Math.abs(c-line);if(d<bd){bd=d;best=st}});
+    if(best&&best!==cur){cur=best;fig.setAttribute('data-step',best.getAttribute('data-step'));steps.forEach(function(st){st.classList.toggle('is-active',st===best)})}}
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(pick)}},{passive:true});
+  pick();
+})();
+</script>
+{{ end }}

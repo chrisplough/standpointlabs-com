@@ -1,22 +1,22 @@
-# Main navigation
+# Main navigation (rebuilt 20260921 to the new home page's sections)
 [[main]]
-  name = "Why Standpoint"
-  url = "/#why-standpoint"
+  name = "What it is"
+  url = "/#what"
   weight = 10
 
 [[main]]
-  name = "The Layer"
-  url = "/#the-layer"
+  name = "Built on it"
+  url = "/#built"
   weight = 20
 
 [[main]]
-  name = "Who It's For"
-  url = "/#who"
+  name = "Why"
+  url = "/#why"
   weight = 30
 
 [[main]]
-  name = "About"
-  url = "/#first-deployment"
+  name = "Who it's for"
+  url = "/#who"
   weight = 40
 
 [[main]]
@@ -31,13 +31,13 @@
 
 # Footer navigation
 [[footer]]
-  name = "Why Standpoint"
-  url = "/#why-standpoint"
+  name = "What it is"
+  url = "/#what"
   weight = 10
 
 [[footer]]
-  name = "The Layer"
-  url = "/#the-layer"
+  name = "The layer"
+  url = "/#layer"
   weight = 20
 
 [[footer]]

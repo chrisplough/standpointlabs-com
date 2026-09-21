@@ -16,14 +16,14 @@
 {{ end }}
 
 {{/* OG Image - use page-specific if available, otherwise default */}}
-{{ $ogImage := "og-image.png" }}
+{{ $ogImage := "og-image.jpg" }}
 {{ with .Params.image }}
   {{ $ogImage = . }}
 {{ end }}
 <meta property="og:image" content="{{ $ogImage | absURL }}" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:type" content="image/png" />
+<meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:alt" content="{{ .Site.Title }} - {{ .Site.Params.description }}" />
 
 {{/* Twitter Card */}}

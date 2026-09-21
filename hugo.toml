@@ -12,7 +12,7 @@ copyright = "© 2026 Standpoint Labs LLC · [Privacy Policy](/privacy/) · [RSS]
   defaultThemeColor = "#FAFAFA"
   enableSearch = false
   enableCodeCopy = true
-  description = "The relational layer for connected sovereignty"
+  description = "Every relationship looks different depending on where you stand. Relational Core is the layer that knows what a connection means to each party, built with complete privacy. The relational layer for connected sovereignty."
   keywords = ["relational infrastructure", "connected sovereignty", "sovereign AI", "self-hosted agents", "agent alignment", "AI agents", "perspective-aware AI", "AI coordination", "context graphs", "community intelligence", "multi-agent systems", "relational core", "relational intelligence", "DI mesh", "standpoint core", "standpoint mesh", "Digital Intelligence", "fifth story"]
 
   [params.defaultImage]

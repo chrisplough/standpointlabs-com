@@ -2028,10 +2028,10 @@ article:has(.privacy-section) > section.prose {
 /* the layer */
 .spl2 .spl2-bands { margin-top: 2rem; display: flex; flex-direction: column; gap: 6px; }
 .spl2 .spl2-bandrow { display: grid; grid-template-columns: 14rem minmax(0, 1fr); gap: 1.5rem; padding: 1.2rem 1.4rem; border: 1px solid var(--spl-line); border-radius: 4px; background: var(--spl-cream); }
-.spl2 .spl2-bandrow.spl2-accent { background: var(--spl-teal); border-color: var(--spl-teal); color: #fff; }
-.spl2 .spl2-bandrow.spl2-accent p { color: #fff; }
-.spl2 .spl2-bandrow.spl2-accent h3 { color: #fff !important; font-weight: 700; }
-.spl2 .spl2-bandrow.spl2-accent { background: #244B4B; border-color: #244B4B; }
+.spl2 .spl2-bandrow.spl2-accent { background: var(--spl-teal); border-color: var(--spl-teal); color: #FAFAF8; }
+.spl2 .spl2-bandrow.spl2-accent p { color: #FAFAF8; }
+.spl2 .spl2-bandrow.spl2-accent h3 { color: #FAFAF8 !important; font-weight: 700; }
+.spl2 .spl2-bandrow.spl2-accent { background: var(--spl-teal); border-color: var(--spl-teal); }
 .spl2 .spl2-bandrow.spl2-accent a { color: #fff; }
 /* who + asks */
 .spl2 .spl2-list { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem 3rem; }

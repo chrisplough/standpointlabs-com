@@ -26,13 +26,18 @@ def rot(v,ax,ay,az=0):
     x,y = x*math.cos(az)-y*math.sin(az), x*math.sin(az)+y*math.cos(az)
     return (x,y,z)
 def build(AX,AY,AZ,cx,cy,s,seed,nfl=80,lit_rank=0,fleck=True):
+    cy_ref=cy
     P=[ (lambda r:(cx+r[0]*s, cy-r[1]*s, r[2]))(rot(v,AX,AY,AZ)) for v in V]
     fs=[]
     for fi,(n,idx) in enumerate(faces):
         depth=rot(n,AX,AY,AZ)[2]
         fs.append((depth,fi," ".join("%.1f,%.1f"%(P[i][0],P[i][1]) for i in idx)))
     fs.sort()
-    lit=sorted(fs,key=lambda t:-t[0])[lit_rank][1]
+    # the standpoint face: front-facing, and in the upper half of the figure (reads stronger than a lower face)
+    def face_y(fi): return sum(P[i][1] for i in faces[fi][1])/5
+    front=[t for t in sorted(fs,key=lambda t:-t[0]) if t[0]>0.15]
+    upper=[t for t in front if face_y(t[1])<cy_ref]
+    lit=(upper if upper else front)[min(lit_rank,len(upper if upper else front)-1)][1]
     parts=[]
     if fleck:
         random.seed(seed)
@@ -52,7 +57,7 @@ if __name__=="__main__":
     # 20260921: the site uses 0.6 0.0 0.0 1, matching the hero photograph (a top face tilted toward the viewer, the front face as the standpoint)
     AX,AY,AZ,rank=[float(x) for x in sys.argv[1:4]]+[int(sys.argv[4])]
     main,(cx,cy)=build(AX,AY,AZ,300,272,150,7,80,rank)
-    mini,_=build(AX+0.4,AY-0.5,0.3,700,150,64,11,40,0)
+    mini,_=build(0.45,0.35,0.15,700,150,64,11,40,0)
     svg=f'''<svg class="crystal" viewBox="0 0 860 540" role="img" aria-label="A faceted solid; one face is highlighted as a standpoint, and that face opens into a faceted solid of its own">
 <g class="s1">{main}</g>
 <g class="s3"><line class="lift" x1="{cx:.0f}" y1="{cy:.0f}" x2="700" y2="150"/>{mini}<text class="lbl" x="700" y="268" text-anchor="middle">one face, seen whole</text></g>
